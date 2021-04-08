@@ -58,4 +58,5 @@ def readJson():
 
 # 主函数入口
 if __name__ == '__main__':
+    logging.getLogger().setLevel(logging.INFO)
     main("", "")
