@@ -33,14 +33,10 @@ def getFeeds():
     # print("TODO 获取用户信息")
     rss = feedparser.parse('http://feeds.feedburner.com/mattkaydiary/pZjG')
     current = rss["entries"][0]
-    print(rss["entries"][0]["summary"])
+    # print(rss["entries"][0]["summary"])
     logging.info('【发布时间】: ' + current["published"])
-    # result = client.get('http://feeds.feedburner.com/mattkaydiary/pZjG')
-    # res = json.loads(result.text)
-    # global user
-    # user = res["data"]
-    # logging.info('【当前账号】: ' + res["data"]["user_name"])
-    # logging.info('【剩余流量】: ' + user["over"])
+    result = re.findall(r"vmess://(.+?)</div>",rss["entries"][0]["summary"])
+    print(result)
 
 
 def checkIn():
