@@ -36,7 +36,7 @@ def getFeeds():
     # print(rss["entries"][0]["summary"])
     logging.info('【发布时间】: ' + current["published"])
     result = re.findall(r"vmess://(.+?)</div>",rss["entries"][0]["summary"])
-    print(result)
+    # print(result)
     i = 0
     for point in result:
         i = i + 1
