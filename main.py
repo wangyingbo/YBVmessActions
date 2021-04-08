@@ -31,17 +31,18 @@ def main(event, context):
 
 def getFeeds():
     logging.info('【发布时间】: ')
-    # # print("TODO 获取用户信息")
-    # rss = feedparser.parse('http://feeds.feedburner.com/mattkaydiary/pZjG')
-    # current = rss["entries"][0]
-    # # print(rss["entries"][0]["summary"])
+    # print("TODO 获取用户信息")
+    rss = feedparser.parse('http://feeds.feedburner.com/mattkaydiary/pZjG')
+    current = rss["entries"][0]
+    # print(rss["entries"][0]["summary"])
     # logging.info('【发布时间】: ' + current["published"])
-    # result = re.findall(r"vmess://(.+?)</div>",rss["entries"][0]["summary"])
-    # # print(result)
-    # i = 0
-    # for point in result:
-    #     i = i + 1
-    #     logging.info( ('%02d' % i) +'vmess://' + point)
+    result = re.findall(r"vmess://(.+?)</div>",rss["entries"][0]["summary"])
+    # print(result)
+    i = 0
+    for point in result:
+        i = i + 1
+        # logging.info( ('%02d' % i) +'vmess://' + point)
+        print( ('%02d' % i) +'vmess://' + point)
 
 
 # 读取用户配置信息
