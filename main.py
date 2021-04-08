@@ -32,7 +32,7 @@ def main(event, context):
 def getFeeds():
     # print("TODO 获取用户信息")
     rss = feedparser.parse('http://feeds.feedburner.com/mattkaydiary/pZjG')
-    print(rss)
+    print(rss["entries"][0])
     # result = client.get('http://feeds.feedburner.com/mattkaydiary/pZjG')
     # res = json.loads(result.text)
     # global user
