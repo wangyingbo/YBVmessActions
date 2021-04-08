@@ -30,29 +30,19 @@ def main(event, context):
 
 
 def getFeeds():
-    # print("TODO 获取用户信息")
-    rss = feedparser.parse('http://feeds.feedburner.com/mattkaydiary/pZjG')
-    current = rss["entries"][0]
-    # print(rss["entries"][0]["summary"])
-    logging.info('【发布时间】: ' + current["published"])
-    result = re.findall(r"vmess://(.+?)</div>",rss["entries"][0]["summary"])
-    # print(result)
-    i = 0
-    for point in result:
-        i = i + 1
-        logging.info( ('%02d' % i) +'vmess://' + point)
+    logging.info('【发布时间】: ')
+    # # print("TODO 获取用户信息")
+    # rss = feedparser.parse('http://feeds.feedburner.com/mattkaydiary/pZjG')
+    # current = rss["entries"][0]
+    # # print(rss["entries"][0]["summary"])
+    # logging.info('【发布时间】: ' + current["published"])
+    # result = re.findall(r"vmess://(.+?)</div>",rss["entries"][0]["summary"])
+    # # print(result)
+    # i = 0
+    # for point in result:
+    #     i = i + 1
+    #     logging.info( ('%02d' % i) +'vmess://' + point)
 
-
-def checkIn():
-    # TODO 签到
-    result = client.post('http://j01.space/user/checkin')
-    res = json.loads(result.text)
-    if res["ret"] == 1:
-        logging.info('【签到成功】: ' + res["msg"])
-        logging.info('【剩余流量】: ' + res["traffic"])
-    else:
-        logging.info('【签到失败】: ' + res["msg"])
-        logging.info('【剩余流量】: ' + user["over"])
 
 # 读取用户配置信息
 # 错误原因有两种：格式错误、未读取到错误
