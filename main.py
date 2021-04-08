@@ -20,11 +20,11 @@ def main(event, context):
     for user in users:
         notify.sendPushplus(user["appId"])
         
-    # 清空上一个用户的日志记录
+    # 清空日志记录
     open('./log.txt', mode='w', encoding='utf-8')
 
 def getFeeds():
-    logging.info('【发布时间】: ')
+    # logging.info('【发布时间】: ')
     # print("TODO 获取用户信息")
     rss = feedparser.parse('http://feeds.feedburner.com/mattkaydiary/pZjG')
     current = rss["entries"][0]
@@ -71,5 +71,5 @@ if __name__ == '__main__':
     ch = logging.StreamHandler()
     ch.setFormatter(logging.Formatter("[%(asctime)s]:%(levelname)s:%(message)s"))
     logger.addHandler(ch)
-    
+
     main("", "")
