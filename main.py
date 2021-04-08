@@ -58,5 +58,18 @@ def readJson():
 
 # 主函数入口
 if __name__ == '__main__':
-    logging.getLogger().setLevel(logging.INFO)
+    # 日志基础配置
+    # 创建一个logger
+    logger = logging.getLogger()
+    logger.setLevel(logging.INFO)
+    # 创建一个handler，用于写入日志文件
+    # w 模式会记住上次日志记录的位置
+    fh = logging.FileHandler('./log.txt', mode='a', encoding='utf-8')
+    fh.setFormatter(logging.Formatter("%(message)s"))
+    logger.addHandler(fh)
+    # 创建一个handler，输出到控制台
+    ch = logging.StreamHandler()
+    ch.setFormatter(logging.Formatter("[%(asctime)s]:%(levelname)s:%(message)s"))
+    logger.addHandler(ch)
+    
     main("", "")
