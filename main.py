@@ -15,7 +15,7 @@ import pytz
 
 
 def main(event, context):
-    user = readJson()
+    users = readJson()
     getFeeds()
     for user in users:
         notify.sendPushplus(user["appId"])
