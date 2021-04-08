@@ -15,19 +15,13 @@ import pytz
 
 
 def main(event, context):
-    # user = readJson()
+    user = readJson()
     getFeeds()
-    # for user in users:
-    #     # 清空上一个用户的日志记录
-    #     open('./log.txt', mode='w', encoding='utf-8')
-    # global client
-    # client = login.login(user["username"], user["password"])
-    # print(client != False)
-    # if client != False:
-    #     getUserInfo()
-    #     checkIn()
-    #     notify.sendPushplus(user["appId"])
-
+    for user in users:
+        notify.sendPushplus(user["appId"])
+        
+    # 清空上一个用户的日志记录
+    open('./log.txt', mode='w', encoding='utf-8')
 
 def getFeeds():
     logging.info('【发布时间】: ')
@@ -41,7 +35,7 @@ def getFeeds():
     i = 0
     for point in result:
         i = i + 1
-        logging.error('【'+('%02d' % i) + '】 vmess://' + point)
+        logging.info('【'+('%02d' % i) + '】 vmess://' + point)
         # print('【'+('%02d' % i) + '】 vmess://' + point)
 
 

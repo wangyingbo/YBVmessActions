@@ -13,7 +13,7 @@ def sendPushplus(token):
         #发送内容
         data = {
             "token": token,
-            "title": "几鸡每日签到",
+            "title": "VMESS每日节点",
             "content": readFile_html('./log.txt')
         }
         url = 'http://www.pushplus.plus/send'
