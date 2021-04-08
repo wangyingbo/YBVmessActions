@@ -1,0 +1,42 @@
+name: 自动采集
+
+# 触发条件
+on:
+  # push的时候触发
+  push:
+    branches: main
+  # gollum:
+  # workflow_dispatch:
+  # 定时触发
+  # schedule:
+  #   # - cron: '*/5 * * * *'
+  #   - cron: '30 1 * * *'
+
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: 配置Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+    - uses: actions/cache@v2
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/run_in_Actions/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+    - name: 设置时区
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+    - name: 安装依赖
+      run: |
+        pip install -r requirements.txt
+    - name: 执行任务
+      env:
+        USERS_COVER: ${{ secrets.USERS_COVER }}
+      run: |
+        echo "$USERS_COVER" > ./config.json
+        python main.py
