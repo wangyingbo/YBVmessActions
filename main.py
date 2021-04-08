@@ -20,13 +20,13 @@ def main(event, context):
     # for user in users:
     #     # 清空上一个用户的日志记录
     #     open('./log.txt', mode='w', encoding='utf-8')
-        # global client
-        # client = login.login(user["username"], user["password"])
-        # print(client != False)
-        # if client != False:
-        #     getUserInfo()
-        #     checkIn()
-        #     notify.sendPushplus(user["appId"])
+    # global client
+    # client = login.login(user["username"], user["password"])
+    # print(client != False)
+    # if client != False:
+    #     getUserInfo()
+    #     checkIn()
+    #     notify.sendPushplus(user["appId"])
 
 
 def getFeeds():
@@ -36,13 +36,13 @@ def getFeeds():
     current = rss["entries"][0]
     # print(rss["entries"][0]["summary"])
     # logging.info('【发布时间】: ' + current["published"])
-    result = re.findall(r"vmess://(.+?)</div>",rss["entries"][0]["summary"])
+    result = re.findall(r"vmess://(.+?)</div>", rss["entries"][0]["summary"])
     # print(result)
     i = 0
     for point in result:
         i = i + 1
-        # logging.info( ('%02d' % i) +'vmess://' + point)
-        print( ('%02d' % i) +'vmess://' + point)
+        logging.error('【'+('%02d' % i) + '】 vmess://' + point)
+        # print('【'+('%02d' % i) + '】 vmess://' + point)
 
 
 # 读取用户配置信息
