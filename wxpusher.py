@@ -24,7 +24,11 @@ def sendSingleMessage(appToken, title, content, uid, msgUrl):
         headers = {'Content-Type': 'application/json'}
         body = json.dumps(data).encode(encoding='utf-8')
         resp = requests.post(url, data=body, headers=headers)
-        print(resp)
+        result = json.loads(resp.text)
+        if result['code'] == 1000:
+           print('创建发送任务成功') 
+        else:               
+           print(result['msg']) 
     except Exception as e:
         print('wxpusher通知推送异常，原因为: ' + str(e))
         print(traceback.format_exc())
@@ -45,7 +49,30 @@ def sendTopicMessage(appToken, title, content, topicId, msgUrl):
         headers = {'Content-Type': 'application/json'}
         body = json.dumps(data).encode(encoding='utf-8')
         resp = requests.post(url, data=body, headers=headers)
-        print(resp)
+        result = json.loads(resp.text)
+        if result['code'] == 1000:
+           print('创建发送任务成功') 
+        else:               
+           print(result['msg']) 
     except Exception as e:
         print('wxpusher通知推送异常，原因为: ' + str(e))
+        print(traceback.format_exc())
+
+
+# 发送push+通知
+def sendPushplus(token,title,content):
+    try:
+        # 发送内容
+        data = {
+            "token": token,
+            "title": title,
+            "content": content
+        }
+        url = 'http://www.pushplus.plus/send'
+        headers = {'Content-Type': 'application/json'}
+        body = json.dumps(data).encode(encoding='utf-8')
+        resp = requests.post(url, data=body, headers=headers)
+        print(resp)
+    except Exception as e:
+        print('push+通知推送异常，原因为: ' + str(e))
         print(traceback.format_exc())

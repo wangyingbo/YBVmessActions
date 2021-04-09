@@ -6,32 +6,28 @@ import logging
 import traceback
 import os
 import random
-# import notify
 import datetime
 import feedparser
 import utils
 import wxpusher
-from lxml.html import fromstring
 import pytz
 
 
-def main(event, context):
-    config = utils.readJsonFile('config.json')
+def main(event, context):    
+    # 初始化日志文件
+    utils.initLog('log.txt')
+    utils.clearLog()
+    config = utils.readJsonFile('config.json')    
     getFeeds()
     content = utils.getLogContent()
     wxpusher.sendTopicMessage(
         config["token"],
         '测试推送',
         content,
-        '1832',
+        [1832],
         'https://fund.lsj8.ltd'
     )
-
-    utils.clearLog()
-    # # 清空日志记录
-    # open('./log.txt', mode='w', encoding='utf-8')
-
-
+    
 def getFeeds():
     rss = feedparser.parse('http://feeds.feedburner.com/mattkaydiary/pZjG')
     current = rss["entries"][0]
@@ -44,6 +40,4 @@ def getFeeds():
 
 # 主函数入口
 if __name__ == '__main__':
-    # 初始化日志文件
-    utils.initLog('log.txt')
     main("", "")

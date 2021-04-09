@@ -3,8 +3,8 @@ name: 自动采集
 # 触发条件
 on:
   # push的时候触发
-  push:
-    branches: main
+  # push:
+  #   branches: main
   # 定时触发
   schedule:
     # - cron: '*/5 * * * *'
