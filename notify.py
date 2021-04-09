@@ -10,6 +10,7 @@ import os
 import requests
 import urllib
 import json
+import array
 # from email.mime.text import MIMEText
 
 # 发送push+通知
