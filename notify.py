@@ -36,7 +36,7 @@ def sendPushplus(token):
 def sendWxPusherByTopic(appToken, topicId):
     try:
         
-        print('appToken: ' + appToken)
+        # print('appToken: ' + appToken)
         # 发送内容  1832
         data = {
             "appToken": appToken,

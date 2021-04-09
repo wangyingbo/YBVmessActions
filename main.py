@@ -15,9 +15,8 @@ import pytz
 
 def main(event, context):
     config = readJson()
-    # getFeeds()
-    logging.info('这是一条测试信息'+config["token"])
-    # notify.sendWxPusherByTopic(token, "1832")
+    getFeeds()
+    notify.sendWxPusherByTopic(config["token"], "1832")
     # for user in users:
     #     notify.sendPushplus(user["appId"])
 
