@@ -13,7 +13,8 @@ import logging
 
 
 def initLog(_logFilePath):
-    global logFilePath = './'+logFilePath
+    global logFilePath
+    logFilePath = './'+_logFilePath
     # 日志基础配置
     # 创建一个logger
     logger = logging.getLogger()
