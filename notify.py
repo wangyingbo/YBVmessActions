@@ -37,18 +37,22 @@ def sendPushplus(token):
 def sendWxPusherByTopic(appToken, topicId):
     try:
         # 发送内容  1832
-        data = {
-            "appToken": appToken,
-            "content": readFile_html('./log.txt'),
-            "summary": "最新VMESS节点",
-            "contentType": 1,
-            "topicIds":  array.array(topicId),
-            "url": "https://fund.lsj8.ltd"
-        }
+        # data = {
+        #     "appToken": appToken,
+        #     "content": readFile_html('./log.txt'),
+        #     "summary": "最新VMESS节点",
+        #     "contentType": 1,
+        #     "topicIds":  array.array(topicId),
+        #     "url": "https://fund.lsj8.ltd"
+        # }
+        data = "{\"appToken\":\""+appToken +
+        "\",\"content\":\"" + \
+            readFile_html(
+                './log.txt')+"\",\"summary\":\"最新VMESS节点\",\"contentType\":1,\"topicIds\":[123],\"url\":\"https://fund.lsj8.ltd\"}"
         url = 'http://wxpusher.zjiecode.com/api/send/message'
         headers = {'Content-Type': 'application/json'}
-        body = json.dumps(data).encode(encoding='utf-8')
-        resp = requests.post(url, data=body, headers=headers)
+        # body = json.dumps(data).encode(encoding='utf-8')
+        resp = requests.post(url, data=data, headers=headers)
         print(resp)
     except Exception as e:
         print('wxpusher通知推送异常，原因为: ' + str(e))
