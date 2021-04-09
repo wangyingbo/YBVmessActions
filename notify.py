@@ -42,7 +42,7 @@ def sendWxPusherByTopic(appToken, topicId):
             "summary": "最新VMESS节点",
             "contentType": 1,
             "topicIds": [topicId],
-            "url": "https://fund.lsj8.ltd" // 原文链接，可选参数
+            "url": "https://fund.lsj8.ltd"
         }
         url = 'http://wxpusher.zjiecode.com/api/send/message'
         headers = {'Content-Type': 'application/json'}
