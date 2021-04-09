@@ -35,6 +35,8 @@ jobs:
     - name: 执行任务
       env:
         USERS_COVER: ${{ secrets.USERS_COVER }}
+        PUSH_TOKEN: ${{ secrets.PUSH_TOKEN }}
       run: |
         echo "$USERS_COVER" > ./config.json
+        echo "$PUSH_TOKEN" > ./token.txt
         python main.py
