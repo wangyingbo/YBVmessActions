@@ -22,7 +22,7 @@ def main(event, context):
     content = utils.getLogContent()
     wxpusher.sendTopicMessage(
         config["token"],
-        '测试推送',
+        '最新VMESS节点',
         content,
         [1832],
         'https://fund.lsj8.ltd'
