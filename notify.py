@@ -35,21 +35,15 @@ def sendPushplus(token):
 
 def sendWxPusherByTopic(appToken, topicId):
     try:
-        content = readFile_html('./log.txt')
         # 发送内容  1832
         data = {
             "appToken": appToken,
-            "content": 'test',
+            "content": readFile_html('./log.txt'),
             "summary": "最新VMESS节点",
             "contentType": 1,
-            # "topicIds":  [topicId],
+            "topicIds":  [topicId],
             "url": "https://fund.lsj8.ltd"
         }
-        # body = '{"appToken":"'+appToken + \
-            # '","content":"' + \
-            # content + \
-            # '","summary":"最新VMESS节点","contentType":1,"topicIds":[' + \
-            # topicId+'],"url":"https://fund.lsj8.ltd"}'
         url = 'http://wxpusher.zjiecode.com/api/send/message'
         headers = {'Content-Type': 'application/json'}
         body = json.dumps(data).encode(encoding='utf-8')

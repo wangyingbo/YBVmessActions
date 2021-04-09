@@ -43,7 +43,7 @@ def readJson():
     try:
         # 用户配置信息
         with open('./token.txt', 'r') as fp:
-            return fp
+            return fp.readline()
         # with open('./config.json', 'r') as fp:
         #     users = json.load(fp)
         #     return users
