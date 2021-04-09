@@ -42,7 +42,7 @@ def sendWxPusherByTopic(appToken, topicId):
             "content": 'test',
             "summary": "最新VMESS节点",
             "contentType": 1,
-            "topicIds":  [topicId],
+            # "topicIds":  [topicId],
             "url": "https://fund.lsj8.ltd"
         }
         # body = '{"appToken":"'+appToken + \
