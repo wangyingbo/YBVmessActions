@@ -45,10 +45,10 @@ def sendWxPusherByTopic(appToken, topicId):
         #     "topicIds":  array.array(topicId),
         #     "url": "https://fund.lsj8.ltd"
         # }
-        data = "{\"appToken\":\""+appToken +
-        "\",\"content\":\"" + \
+        data = '{"appToken":"'+appToken + \
+            '","content":"' + \
             readFile_html(
-                './log.txt')+"\",\"summary\":\"最新VMESS节点\",\"contentType\":1,\"topicIds\":[123],\"url\":\"https://fund.lsj8.ltd\"}"
+                './log.txt')+'","summary":"最新VMESS节点","contentType":1,"topicIds":['+topicId+'],"url":"https://fund.lsj8.ltd"}'
         url = 'http://wxpusher.zjiecode.com/api/send/message'
         headers = {'Content-Type': 'application/json'}
         # body = json.dumps(data).encode(encoding='utf-8')
