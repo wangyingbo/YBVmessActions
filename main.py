@@ -16,8 +16,8 @@ import pytz
 def main(event, context):
     token = readJson()
     # getFeeds()
-    logging.info('这是一条测试信息')
-    notify.sendWxPusherByTopic(token, "1832")
+    logging.info('这是一条测试信息'+token)
+    # notify.sendWxPusherByTopic(token, "1832")
     # for user in users:
     #     notify.sendPushplus(user["appId"])
 
@@ -41,9 +41,12 @@ def getFeeds():
 # 错误原因有两种：格式错误、未读取到错误
 def readJson():
     try:
+        content = ''
         # 用户配置信息
         with open('./token.txt', 'r') as fp:
-            return fp.readline()
+            for line in fp.readlines():
+                content += line
+        return content
         # with open('./config.json', 'r') as fp:
         #     users = json.load(fp)
         #     return users
