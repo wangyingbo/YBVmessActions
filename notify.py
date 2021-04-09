@@ -49,7 +49,7 @@ def sendWxPusherByTopic(appToken, topicId):
         url = 'http://wxpusher.zjiecode.com/api/send/message'
         headers = {'Content-Type': 'application/json'}
         body = json.dumps(data).encode(encoding='utf-8')
-        print('body: ' + body)
+        print('body: ' +  json.dumps(data))
         resp = requests.post(url, data=body, headers=headers)
         print(resp)
     except Exception as e:
