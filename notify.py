@@ -35,6 +35,8 @@ def sendPushplus(token):
 
 def sendWxPusherByTopic(appToken, topicId):
     try:
+        
+        print('appToken: ' + appToken)
         # 发送内容  1832
         data = {
             "appToken": appToken,
@@ -47,6 +49,7 @@ def sendWxPusherByTopic(appToken, topicId):
         url = 'http://wxpusher.zjiecode.com/api/send/message'
         headers = {'Content-Type': 'application/json'}
         body = json.dumps(data).encode(encoding='utf-8')
+        print('body: ' + body)
         resp = requests.post(url, data=body, headers=headers)
         print(resp)
     except Exception as e:
