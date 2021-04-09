@@ -42,7 +42,7 @@ def sendWxPusherByTopic(appToken, topicId):
             "content": readFile_html('./log.txt'),
             "summary": "最新VMESS节点",
             "contentType": 1,
-            "topicIds":  array(topicId),
+            "topicIds":  array.array(topicId),
             "url": "https://fund.lsj8.ltd"
         }
         url = 'http://wxpusher.zjiecode.com/api/send/message'
