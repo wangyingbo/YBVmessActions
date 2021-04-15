@@ -66,10 +66,10 @@ def getSubscribeUrl():
         "GET", clashList[len(clashList)-1].replace('amp;',''), verify=False)
     print(v2rayList)
     print(clashList)
-    with open('./v2ray.txt', 'a+') as f:
+    with open('./v2ray.txt', 'w') as f:
         f.write(v2rayTxt.text)
     
-    with open('./clash.yml', 'a+') as f:
+    with open('./clash.yml', 'w') as f:
         f.write(clashTxt.text)
 
 
