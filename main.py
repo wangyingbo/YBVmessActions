@@ -65,13 +65,13 @@ def getSubscribeUrl():
     clashTxt = requests.request(
         "GET", clashList[len(clashList)-1], verify=False)
     
-    print(v2rayList)
-    print(clashList)
+    print(v2rayList.text)
+    print(clashList.text)
     with open('./v2ray.txt', 'a+') as f:
-        f.write(v2rayTxt)
+        f.write(v2rayTxt.text)
     
     with open('./clash.yml', 'a+') as f:
-        f.write(clashTxt)
+        f.write(clashTxt.text)
 
 
 # 主函数入口
