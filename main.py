@@ -68,10 +68,10 @@ def getSubscribeUrl():
     print(v2rayList)
     print(clashList)
     with open('./v2ray.txt', 'a+') as f:
-    f.write(v2rayTxt)
+        f.write(v2rayTxt)
     
     with open('./clash.yml', 'a+') as f:
-    f.write(clashTxt)
+        f.write(clashTxt)
 
 
 # 主函数入口
