@@ -65,8 +65,8 @@ def getSubscribeUrl():
     clashTxt = requests.request(
         "GET", clashList[len(clashList)-1], verify=False)
     
-    print(v2rayList.text)
-    print(clashList.text)
+    print(v2rayList)
+    print(clashList)
     with open('./v2ray.txt', 'a+') as f:
         f.write(v2rayTxt.text)
     
