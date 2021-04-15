@@ -61,10 +61,9 @@ def getSubscribeUrl():
     clashList = re.findall(
         r"clash\(若无法更新请开启代理后再拉取\)：(.+?)</div>", rss["entries"][0]["summary"])
     v2rayTxt = requests.request(
-        "GET", v2rayList[len(v2rayList)-1], verify=False)
+        "GET", v2rayList[len(v2rayList)-1].replace('amp;',''), verify=False)
     clashTxt = requests.request(
-        "GET", clashList[len(clashList)-1], verify=False)
-    
+        "GET", clashList[len(clashList)-1].replace('amp;',''), verify=False)
     print(v2rayList)
     print(clashList)
     with open('./v2ray.txt', 'a+') as f:
