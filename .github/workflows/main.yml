@@ -5,6 +5,7 @@ on:
   # push的时候触发
   # push:
   #   branches: main
+  workflow_dispatch:
   # 定时触发
   schedule:
     # - cron: '*/5 * * * *'
@@ -40,3 +41,15 @@ jobs:
       run: |
         echo "$CONFIG" > ./config.json
         python main.py
+    - name: 提交更改
+      run: |                 
+         git config --local user.email "skywolf627@qq.com"
+         git config --local user.name "skywolf627"
+         git add v2ray.txt
+         git add clash.yml
+         git commit -m "更新订阅链接"
+    - name: 推送更改
+      uses:  ad-m/github-push-action@master
+      with:
+         github_token: ${{ secrets.TOKEN }}
+         branch: main
