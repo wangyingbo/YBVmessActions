@@ -5,131 +5,107 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 仅供学习，请24小时内删除|Best!Transit*Shanghai-HK*CN2-GIA02, server: transite-shcn2-02.iplc188.com, port: 10011, type: vmess, uuid: 7be91d0d-a814-402c-ab5f-4ac32debed20, alterId: 1, cipher: auto, tls: false}
-  - {name: 🇨🇳 仅供学习，请24小时内删除|Best!Transit*Shanghai-Europe*CN2-GIA02, server: transite-shcn2-02.iplc188.com, port: 10014, type: vmess, uuid: 7be91d0d-a814-402c-ab5f-4ac32debed20, alterId: 1, cipher: auto, tls: false}
-  - {name: 🇭🇰 仅供学习，请24小时内删除|Low Latency!Transit*Guangzhou-HK01, server: gzcm01.iplc188.com, port: 10001, type: vmess, uuid: 7be91d0d-a814-402c-ab5f-4ac32debed20, alterId: 1, cipher: auto, tls: false}
+  - {name: 🇯🇵 仅供学习，请24小时内删除|Relay_🇨🇳CN-🇯🇵JP_505, server: xzlt-zz.tsutsu.top, port: 16193, type: vmess, uuid: eafe0eec-4469-45e6-848a-0b79654a8ca0, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: xzlt-zz.tsutsu.top}}
+  - {name: 🇬🇧 仅供学习，请24小时内删除|adi|0416 - 英国, server: 185.141.206.206, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 🇨🇭 仅供学习，请24小时内删除|adi|0416 - 瑞士, server: 185.124.240.151, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇨🇭 仅供学习，请24小时内删除|adi|0416 - 瑞士 2, server: 156.146.62.41, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 仅供学习，请24小时内删除|adi|0416 - 欧洲, server: 194.41.112.9, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 仅供学习，请24小时内删除|adi|0416 - 欧洲 2, server: 193.29.106.157, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 🇺🇸 仅供学习，请24小时内删除|adi|0416 - 美国, server: 199.36.221.119, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇷🇴 仅供学习，请24小时内删除|罗马尼亚, server: 194.110.115.75, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇷🇴 仅供学习，请24小时内删除|罗马尼亚 2, server: 193.29.107.93, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 仅供学习，请24小时内删除, server: 192.46.210.107, port: 729, type: vmess, uuid: 39341fe7-b8b7-4605-a811-af1f1d46d4fb, alterId: 100, cipher: auto, tls: false}
+  - {name: 仅供学习，请24小时内删除 2, server: 18.141.240.114, port: 729, type: vmess, uuid: 39341fe7-b8b7-4605-a811-af1f1d46d4fb, alterId: 100, cipher: auto, tls: false}
+  - {name: 仅供学习，请24小时内删除|Relay_🇨🇦CA-🇨🇦CA_42, server: v5.ssrsub.one, port: 153, type: vmess, uuid: f129b24d-1799-4b38-a73a-a808e15fb45f, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: n46hm52773.laowanxiang.com}}
+  - {name: 仅供学习，请24小时内删除|Relay_🇨🇦CA-🇨🇦CA_43, server: v4.ssrsub.one, port: 153, type: vmess, uuid: f129b24d-1799-4b38-a73a-a808e15fb45f, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: n46hm52773.laowanxiang.com}}
+  - {name: 🇯🇵 仅供学习，请24小时内删除|Relay_🇰🇷KR-🇯🇵JP_99, server: s366.snodes.xyz, port: 80, type: vmess, uuid: a1121be7-6d3a-32c5-8a45-cc43bcd16295, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /panel, ws-headers: {Host: s366.snodes.xyz}}
+  - {name: 🇨🇳 仅供学习，请24小时内删除|🇨🇳 CN_88, server: 183.236.57.18, port: 10001, type: vmess, uuid: 7be91d0d-a814-402c-ab5f-4ac32debed20, alterId: 0, cipher: auto, tls: false}
   - {name: 仅供学习，请24小时内删除|Best!*Shanghai-Tokyo*21, server: transite-shcu01.iplc188.com, port: 10001, type: vmess, uuid: 7be91d0d-a814-402c-ab5f-4ac32debed20, alterId: 1, cipher: auto, tls: false}
   - {name: 仅供学习，请24小时内删除|Best!*Shanghai-Seoul*21, server: transite-shcu01.iplc188.com, port: 10002, type: vmess, uuid: 7be91d0d-a814-402c-ab5f-4ac32debed20, alterId: 1, cipher: auto, tls: false}
   - {name: 仅供学习，请24小时内删除|Best!*Shanghai-LAX*21, server: transite-shcu01.iplc188.com, port: 10003, type: vmess, uuid: 7be91d0d-a814-402c-ab5f-4ac32debed20, alterId: 1, cipher: auto, tls: false}
   - {name: 仅供学习，请24小时内删除|Best!*Shanghai-Taipei*21, server: transite-shcu01.iplc188.com, port: 10004, type: vmess, uuid: 7be91d0d-a814-402c-ab5f-4ac32debed20, alterId: 1, cipher: auto, tls: false}
-  - {name: 🇭🇰 仅供学习，请24小时内删除|TRANSIT*BGP-Hong-Kong*31, server: xz-bgp01.iplc188.com, port: 10011, type: vmess, uuid: 7be91d0d-a814-402c-ab5f-4ac32debed20, alterId: 1, cipher: auto, tls: false}
   - {name: 🇺🇸 仅供学习，请24小时内删除|美国NN-10, server: nn-ssr10.feiclouddd.me, port: 443, type: vmess, uuid: 293c9602-981f-4766-bb56-7bebb84da721, alterId: 60, cipher: auto, tls: true, network: ws, ws-path: /fgdfdsg, ws-headers: {Host: nn-ssr10.feiclouddd.me}}
-  - {name: 🇨🇳 仅供学习，请24小时内删除|🇨🇳 CN_88, server: 183.236.57.18, port: 10001, type: vmess, uuid: 7be91d0d-a814-402c-ab5f-4ac32debed20, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_246, server: 202.81.235.84, port: 80, type: vmess, uuid: 722ec9b4-7449-40a4-8979-17a444561017, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 202.81.235.84}}
-  - {name: 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_247, server: 202.81.235.79, port: 80, type: vmess, uuid: 722ec9b4-7449-40a4-8979-17a444561017, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 202.81.235.79}}
-  - {name: 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_248, server: 202.81.235.80, port: 80, type: vmess, uuid: 722ec9b4-7449-40a4-8979-17a444561017, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 202.81.235.80}}
-  - {name: 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_249, server: 202.81.235.81, port: 80, type: vmess, uuid: 722ec9b4-7449-40a4-8979-17a444561017, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 202.81.235.81}}
-  - {name: 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_250, server: 202.81.235.76, port: 80, type: vmess, uuid: 722ec9b4-7449-40a4-8979-17a444561017, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 202.81.235.76}}
-  - {name: 🇺🇸 仅供学习，请24小时内删除|美国, server: 156.146.33.73, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇷🇴 仅供学习，请24小时内删除|罗马尼亚, server: 193.29.106.197, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 🇮🇹 仅供学习，请24小时内删除|意大利, server: 212.102.35.218, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 🇺🇸 仅供学习，请24小时内删除|北美地区, server: 104.200.131.233, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 仅供学习，请24小时内删除|弗吉尼亚州, server: 207.244.67.149, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
   - {name: 仅供学习，请24小时内删除|罗马, server: 194.110.115.85, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 🇬🇧 仅供学习，请24小时内删除|英国, server: 89.238.130.227, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇦🇺 仅供学习，请24小时内删除|Relay_🇦🇺AU-🇺🇸US_285, server: 1.0.0.0, port: 443, type: vmess, uuid: 65f11be5-ac71-4f0c-874b-d93c610c66ef, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: us-a.freeproxy1.workers.dev}}
-  - {name: 🇭🇰 仅供学习，请24小时内删除|Relay_🇨🇳CN-🇭🇰HK_496, server: gzcm01.iplc188.com, port: 10001, type: vmess, uuid: 7be91d0d-a814-402c-ab5f-4ac32debed20, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 仅供学习，请24小时内删除|Relay_🇭🇰HK-🇷🇺RU_1278, server: zhongzhuangazhk2.xiaobaiyun.me, port: 800, type: vmess, uuid: 6d04dd65-c0b0-38b0-8d3a-be30a68cb55d, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: els.xiaobaiyun.me}}
-  - {name: 🇯🇵 仅供学习，请24小时内删除|🇯🇵JP_1537, server: 202.81.235.74, port: 80, type: vmess, uuid: 722ec9b4-7449-40a4-8979-17a444561017, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 202.81.235.74}}
-  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1541, server: s19.snodes.xyz, port: 80, type: vmess, uuid: a1121be7-6d3a-32c5-8a45-cc43bcd16295, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /panel, ws-headers: {Host: s19.snodes.xyz}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 仅供学习，请24小时内删除|Best!Transit*Shanghai-HK*CN2-GIA02
-      - 🇨🇳 仅供学习，请24小时内删除|Best!Transit*Shanghai-Europe*CN2-GIA02
-      - 🇭🇰 仅供学习，请24小时内删除|Low Latency!Transit*Guangzhou-HK01
+      - 🇯🇵 仅供学习，请24小时内删除|Relay_🇨🇳CN-🇯🇵JP_505
+      - 🇬🇧 仅供学习，请24小时内删除|adi|0416 - 英国
+      - 🇨🇭 仅供学习，请24小时内删除|adi|0416 - 瑞士
+      - 🇨🇭 仅供学习，请24小时内删除|adi|0416 - 瑞士 2
+      - 仅供学习，请24小时内删除|adi|0416 - 欧洲
+      - 仅供学习，请24小时内删除|adi|0416 - 欧洲 2
+      - 🇺🇸 仅供学习，请24小时内删除|adi|0416 - 美国
+      - 🇷🇴 仅供学习，请24小时内删除|罗马尼亚
+      - 🇷🇴 仅供学习，请24小时内删除|罗马尼亚 2
+      - 仅供学习，请24小时内删除
+      - 仅供学习，请24小时内删除 2
+      - 仅供学习，请24小时内删除|Relay_🇨🇦CA-🇨🇦CA_42
+      - 仅供学习，请24小时内删除|Relay_🇨🇦CA-🇨🇦CA_43
+      - 🇯🇵 仅供学习，请24小时内删除|Relay_🇰🇷KR-🇯🇵JP_99
+      - 🇨🇳 仅供学习，请24小时内删除|🇨🇳 CN_88
       - 仅供学习，请24小时内删除|Best!*Shanghai-Tokyo*21
       - 仅供学习，请24小时内删除|Best!*Shanghai-Seoul*21
       - 仅供学习，请24小时内删除|Best!*Shanghai-LAX*21
       - 仅供学习，请24小时内删除|Best!*Shanghai-Taipei*21
-      - 🇭🇰 仅供学习，请24小时内删除|TRANSIT*BGP-Hong-Kong*31
       - 🇺🇸 仅供学习，请24小时内删除|美国NN-10
-      - 🇨🇳 仅供学习，请24小时内删除|🇨🇳 CN_88
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_246
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_247
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_248
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_249
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_250
-      - 🇺🇸 仅供学习，请24小时内删除|美国
-      - 🇷🇴 仅供学习，请24小时内删除|罗马尼亚
-      - 🇮🇹 仅供学习，请24小时内删除|意大利
-      - 🇺🇸 仅供学习，请24小时内删除|北美地区
-      - 仅供学习，请24小时内删除|弗吉尼亚州
       - 仅供学习，请24小时内删除|罗马
-      - 🇬🇧 仅供学习，请24小时内删除|英国
-      - 🇦🇺 仅供学习，请24小时内删除|Relay_🇦🇺AU-🇺🇸US_285
-      - 🇭🇰 仅供学习，请24小时内删除|Relay_🇨🇳CN-🇭🇰HK_496
-      - 🇭🇰 仅供学习，请24小时内删除|Relay_🇭🇰HK-🇷🇺RU_1278
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵JP_1537
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1541
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇭🇰 仅供学习，请24小时内删除|Best!Transit*Shanghai-HK*CN2-GIA02
-      - 🇨🇳 仅供学习，请24小时内删除|Best!Transit*Shanghai-Europe*CN2-GIA02
-      - 🇭🇰 仅供学习，请24小时内删除|Low Latency!Transit*Guangzhou-HK01
+      - 🇯🇵 仅供学习，请24小时内删除|Relay_🇨🇳CN-🇯🇵JP_505
+      - 🇬🇧 仅供学习，请24小时内删除|adi|0416 - 英国
+      - 🇨🇭 仅供学习，请24小时内删除|adi|0416 - 瑞士
+      - 🇨🇭 仅供学习，请24小时内删除|adi|0416 - 瑞士 2
+      - 仅供学习，请24小时内删除|adi|0416 - 欧洲
+      - 仅供学习，请24小时内删除|adi|0416 - 欧洲 2
+      - 🇺🇸 仅供学习，请24小时内删除|adi|0416 - 美国
+      - 🇷🇴 仅供学习，请24小时内删除|罗马尼亚
+      - 🇷🇴 仅供学习，请24小时内删除|罗马尼亚 2
+      - 仅供学习，请24小时内删除
+      - 仅供学习，请24小时内删除 2
+      - 仅供学习，请24小时内删除|Relay_🇨🇦CA-🇨🇦CA_42
+      - 仅供学习，请24小时内删除|Relay_🇨🇦CA-🇨🇦CA_43
+      - 🇯🇵 仅供学习，请24小时内删除|Relay_🇰🇷KR-🇯🇵JP_99
+      - 🇨🇳 仅供学习，请24小时内删除|🇨🇳 CN_88
       - 仅供学习，请24小时内删除|Best!*Shanghai-Tokyo*21
       - 仅供学习，请24小时内删除|Best!*Shanghai-Seoul*21
       - 仅供学习，请24小时内删除|Best!*Shanghai-LAX*21
       - 仅供学习，请24小时内删除|Best!*Shanghai-Taipei*21
-      - 🇭🇰 仅供学习，请24小时内删除|TRANSIT*BGP-Hong-Kong*31
       - 🇺🇸 仅供学习，请24小时内删除|美国NN-10
-      - 🇨🇳 仅供学习，请24小时内删除|🇨🇳 CN_88
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_246
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_247
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_248
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_249
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_250
-      - 🇺🇸 仅供学习，请24小时内删除|美国
-      - 🇷🇴 仅供学习，请24小时内删除|罗马尼亚
-      - 🇮🇹 仅供学习，请24小时内删除|意大利
-      - 🇺🇸 仅供学习，请24小时内删除|北美地区
-      - 仅供学习，请24小时内删除|弗吉尼亚州
       - 仅供学习，请24小时内删除|罗马
-      - 🇬🇧 仅供学习，请24小时内删除|英国
-      - 🇦🇺 仅供学习，请24小时内删除|Relay_🇦🇺AU-🇺🇸US_285
-      - 🇭🇰 仅供学习，请24小时内删除|Relay_🇨🇳CN-🇭🇰HK_496
-      - 🇭🇰 仅供学习，请24小时内删除|Relay_🇭🇰HK-🇷🇺RU_1278
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵JP_1537
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1541
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 仅供学习，请24小时内删除|Best!Transit*Shanghai-HK*CN2-GIA02
-      - 🇨🇳 仅供学习，请24小时内删除|Best!Transit*Shanghai-Europe*CN2-GIA02
-      - 🇭🇰 仅供学习，请24小时内删除|Low Latency!Transit*Guangzhou-HK01
+      - 🇯🇵 仅供学习，请24小时内删除|Relay_🇨🇳CN-🇯🇵JP_505
+      - 🇬🇧 仅供学习，请24小时内删除|adi|0416 - 英国
+      - 🇨🇭 仅供学习，请24小时内删除|adi|0416 - 瑞士
+      - 🇨🇭 仅供学习，请24小时内删除|adi|0416 - 瑞士 2
+      - 仅供学习，请24小时内删除|adi|0416 - 欧洲
+      - 仅供学习，请24小时内删除|adi|0416 - 欧洲 2
+      - 🇺🇸 仅供学习，请24小时内删除|adi|0416 - 美国
+      - 🇷🇴 仅供学习，请24小时内删除|罗马尼亚
+      - 🇷🇴 仅供学习，请24小时内删除|罗马尼亚 2
+      - 仅供学习，请24小时内删除
+      - 仅供学习，请24小时内删除 2
+      - 仅供学习，请24小时内删除|Relay_🇨🇦CA-🇨🇦CA_42
+      - 仅供学习，请24小时内删除|Relay_🇨🇦CA-🇨🇦CA_43
+      - 🇯🇵 仅供学习，请24小时内删除|Relay_🇰🇷KR-🇯🇵JP_99
+      - 🇨🇳 仅供学习，请24小时内删除|🇨🇳 CN_88
       - 仅供学习，请24小时内删除|Best!*Shanghai-Tokyo*21
       - 仅供学习，请24小时内删除|Best!*Shanghai-Seoul*21
       - 仅供学习，请24小时内删除|Best!*Shanghai-LAX*21
       - 仅供学习，请24小时内删除|Best!*Shanghai-Taipei*21
-      - 🇭🇰 仅供学习，请24小时内删除|TRANSIT*BGP-Hong-Kong*31
       - 🇺🇸 仅供学习，请24小时内删除|美国NN-10
-      - 🇨🇳 仅供学习，请24小时内删除|🇨🇳 CN_88
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_246
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_247
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_248
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_249
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_250
-      - 🇺🇸 仅供学习，请24小时内删除|美国
-      - 🇷🇴 仅供学习，请24小时内删除|罗马尼亚
-      - 🇮🇹 仅供学习，请24小时内删除|意大利
-      - 🇺🇸 仅供学习，请24小时内删除|北美地区
-      - 仅供学习，请24小时内删除|弗吉尼亚州
       - 仅供学习，请24小时内删除|罗马
-      - 🇬🇧 仅供学习，请24小时内删除|英国
-      - 🇦🇺 仅供学习，请24小时内删除|Relay_🇦🇺AU-🇺🇸US_285
-      - 🇭🇰 仅供学习，请24小时内删除|Relay_🇨🇳CN-🇭🇰HK_496
-      - 🇭🇰 仅供学习，请24小时内删除|Relay_🇭🇰HK-🇷🇺RU_1278
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵JP_1537
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1541
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -140,98 +116,80 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇭🇰 仅供学习，请24小时内删除|Best!Transit*Shanghai-HK*CN2-GIA02
-      - 🇨🇳 仅供学习，请24小时内删除|Best!Transit*Shanghai-Europe*CN2-GIA02
-      - 🇭🇰 仅供学习，请24小时内删除|Low Latency!Transit*Guangzhou-HK01
+      - 🇯🇵 仅供学习，请24小时内删除|Relay_🇨🇳CN-🇯🇵JP_505
+      - 🇬🇧 仅供学习，请24小时内删除|adi|0416 - 英国
+      - 🇨🇭 仅供学习，请24小时内删除|adi|0416 - 瑞士
+      - 🇨🇭 仅供学习，请24小时内删除|adi|0416 - 瑞士 2
+      - 仅供学习，请24小时内删除|adi|0416 - 欧洲
+      - 仅供学习，请24小时内删除|adi|0416 - 欧洲 2
+      - 🇺🇸 仅供学习，请24小时内删除|adi|0416 - 美国
+      - 🇷🇴 仅供学习，请24小时内删除|罗马尼亚
+      - 🇷🇴 仅供学习，请24小时内删除|罗马尼亚 2
+      - 仅供学习，请24小时内删除
+      - 仅供学习，请24小时内删除 2
+      - 仅供学习，请24小时内删除|Relay_🇨🇦CA-🇨🇦CA_42
+      - 仅供学习，请24小时内删除|Relay_🇨🇦CA-🇨🇦CA_43
+      - 🇯🇵 仅供学习，请24小时内删除|Relay_🇰🇷KR-🇯🇵JP_99
+      - 🇨🇳 仅供学习，请24小时内删除|🇨🇳 CN_88
       - 仅供学习，请24小时内删除|Best!*Shanghai-Tokyo*21
       - 仅供学习，请24小时内删除|Best!*Shanghai-Seoul*21
       - 仅供学习，请24小时内删除|Best!*Shanghai-LAX*21
       - 仅供学习，请24小时内删除|Best!*Shanghai-Taipei*21
-      - 🇭🇰 仅供学习，请24小时内删除|TRANSIT*BGP-Hong-Kong*31
       - 🇺🇸 仅供学习，请24小时内删除|美国NN-10
-      - 🇨🇳 仅供学习，请24小时内删除|🇨🇳 CN_88
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_246
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_247
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_248
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_249
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_250
-      - 🇺🇸 仅供学习，请24小时内删除|美国
-      - 🇷🇴 仅供学习，请24小时内删除|罗马尼亚
-      - 🇮🇹 仅供学习，请24小时内删除|意大利
-      - 🇺🇸 仅供学习，请24小时内删除|北美地区
-      - 仅供学习，请24小时内删除|弗吉尼亚州
       - 仅供学习，请24小时内删除|罗马
-      - 🇬🇧 仅供学习，请24小时内删除|英国
-      - 🇦🇺 仅供学习，请24小时内删除|Relay_🇦🇺AU-🇺🇸US_285
-      - 🇭🇰 仅供学习，请24小时内删除|Relay_🇨🇳CN-🇭🇰HK_496
-      - 🇭🇰 仅供学习，请24小时内删除|Relay_🇭🇰HK-🇷🇺RU_1278
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵JP_1537
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1541
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇭🇰 仅供学习，请24小时内删除|Best!Transit*Shanghai-HK*CN2-GIA02
-      - 🇨🇳 仅供学习，请24小时内删除|Best!Transit*Shanghai-Europe*CN2-GIA02
-      - 🇭🇰 仅供学习，请24小时内删除|Low Latency!Transit*Guangzhou-HK01
+      - 🇯🇵 仅供学习，请24小时内删除|Relay_🇨🇳CN-🇯🇵JP_505
+      - 🇬🇧 仅供学习，请24小时内删除|adi|0416 - 英国
+      - 🇨🇭 仅供学习，请24小时内删除|adi|0416 - 瑞士
+      - 🇨🇭 仅供学习，请24小时内删除|adi|0416 - 瑞士 2
+      - 仅供学习，请24小时内删除|adi|0416 - 欧洲
+      - 仅供学习，请24小时内删除|adi|0416 - 欧洲 2
+      - 🇺🇸 仅供学习，请24小时内删除|adi|0416 - 美国
+      - 🇷🇴 仅供学习，请24小时内删除|罗马尼亚
+      - 🇷🇴 仅供学习，请24小时内删除|罗马尼亚 2
+      - 仅供学习，请24小时内删除
+      - 仅供学习，请24小时内删除 2
+      - 仅供学习，请24小时内删除|Relay_🇨🇦CA-🇨🇦CA_42
+      - 仅供学习，请24小时内删除|Relay_🇨🇦CA-🇨🇦CA_43
+      - 🇯🇵 仅供学习，请24小时内删除|Relay_🇰🇷KR-🇯🇵JP_99
+      - 🇨🇳 仅供学习，请24小时内删除|🇨🇳 CN_88
       - 仅供学习，请24小时内删除|Best!*Shanghai-Tokyo*21
       - 仅供学习，请24小时内删除|Best!*Shanghai-Seoul*21
       - 仅供学习，请24小时内删除|Best!*Shanghai-LAX*21
       - 仅供学习，请24小时内删除|Best!*Shanghai-Taipei*21
-      - 🇭🇰 仅供学习，请24小时内删除|TRANSIT*BGP-Hong-Kong*31
       - 🇺🇸 仅供学习，请24小时内删除|美国NN-10
-      - 🇨🇳 仅供学习，请24小时内删除|🇨🇳 CN_88
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_246
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_247
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_248
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_249
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_250
-      - 🇺🇸 仅供学习，请24小时内删除|美国
-      - 🇷🇴 仅供学习，请24小时内删除|罗马尼亚
-      - 🇮🇹 仅供学习，请24小时内删除|意大利
-      - 🇺🇸 仅供学习，请24小时内删除|北美地区
-      - 仅供学习，请24小时内删除|弗吉尼亚州
       - 仅供学习，请24小时内删除|罗马
-      - 🇬🇧 仅供学习，请24小时内删除|英国
-      - 🇦🇺 仅供学习，请24小时内删除|Relay_🇦🇺AU-🇺🇸US_285
-      - 🇭🇰 仅供学习，请24小时内删除|Relay_🇨🇳CN-🇭🇰HK_496
-      - 🇭🇰 仅供学习，请24小时内删除|Relay_🇭🇰HK-🇷🇺RU_1278
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵JP_1537
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1541
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 仅供学习，请24小时内删除|Best!Transit*Shanghai-HK*CN2-GIA02
-      - 🇨🇳 仅供学习，请24小时内删除|Best!Transit*Shanghai-Europe*CN2-GIA02
-      - 🇭🇰 仅供学习，请24小时内删除|Low Latency!Transit*Guangzhou-HK01
+      - 🇯🇵 仅供学习，请24小时内删除|Relay_🇨🇳CN-🇯🇵JP_505
+      - 🇬🇧 仅供学习，请24小时内删除|adi|0416 - 英国
+      - 🇨🇭 仅供学习，请24小时内删除|adi|0416 - 瑞士
+      - 🇨🇭 仅供学习，请24小时内删除|adi|0416 - 瑞士 2
+      - 仅供学习，请24小时内删除|adi|0416 - 欧洲
+      - 仅供学习，请24小时内删除|adi|0416 - 欧洲 2
+      - 🇺🇸 仅供学习，请24小时内删除|adi|0416 - 美国
+      - 🇷🇴 仅供学习，请24小时内删除|罗马尼亚
+      - 🇷🇴 仅供学习，请24小时内删除|罗马尼亚 2
+      - 仅供学习，请24小时内删除
+      - 仅供学习，请24小时内删除 2
+      - 仅供学习，请24小时内删除|Relay_🇨🇦CA-🇨🇦CA_42
+      - 仅供学习，请24小时内删除|Relay_🇨🇦CA-🇨🇦CA_43
+      - 🇯🇵 仅供学习，请24小时内删除|Relay_🇰🇷KR-🇯🇵JP_99
+      - 🇨🇳 仅供学习，请24小时内删除|🇨🇳 CN_88
       - 仅供学习，请24小时内删除|Best!*Shanghai-Tokyo*21
       - 仅供学习，请24小时内删除|Best!*Shanghai-Seoul*21
       - 仅供学习，请24小时内删除|Best!*Shanghai-LAX*21
       - 仅供学习，请24小时内删除|Best!*Shanghai-Taipei*21
-      - 🇭🇰 仅供学习，请24小时内删除|TRANSIT*BGP-Hong-Kong*31
       - 🇺🇸 仅供学习，请24小时内删除|美国NN-10
-      - 🇨🇳 仅供学习，请24小时内删除|🇨🇳 CN_88
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_246
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_247
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_248
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_249
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_250
-      - 🇺🇸 仅供学习，请24小时内删除|美国
-      - 🇷🇴 仅供学习，请24小时内删除|罗马尼亚
-      - 🇮🇹 仅供学习，请24小时内删除|意大利
-      - 🇺🇸 仅供学习，请24小时内删除|北美地区
-      - 仅供学习，请24小时内删除|弗吉尼亚州
       - 仅供学习，请24小时内删除|罗马
-      - 🇬🇧 仅供学习，请24小时内删除|英国
-      - 🇦🇺 仅供学习，请24小时内删除|Relay_🇦🇺AU-🇺🇸US_285
-      - 🇭🇰 仅供学习，请24小时内删除|Relay_🇨🇳CN-🇭🇰HK_496
-      - 🇭🇰 仅供学习，请24小时内删除|Relay_🇭🇰HK-🇷🇺RU_1278
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵JP_1537
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1541
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -247,33 +205,27 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 仅供学习，请24小时内删除|Best!Transit*Shanghai-HK*CN2-GIA02
-      - 🇨🇳 仅供学习，请24小时内删除|Best!Transit*Shanghai-Europe*CN2-GIA02
-      - 🇭🇰 仅供学习，请24小时内删除|Low Latency!Transit*Guangzhou-HK01
+      - 🇯🇵 仅供学习，请24小时内删除|Relay_🇨🇳CN-🇯🇵JP_505
+      - 🇬🇧 仅供学习，请24小时内删除|adi|0416 - 英国
+      - 🇨🇭 仅供学习，请24小时内删除|adi|0416 - 瑞士
+      - 🇨🇭 仅供学习，请24小时内删除|adi|0416 - 瑞士 2
+      - 仅供学习，请24小时内删除|adi|0416 - 欧洲
+      - 仅供学习，请24小时内删除|adi|0416 - 欧洲 2
+      - 🇺🇸 仅供学习，请24小时内删除|adi|0416 - 美国
+      - 🇷🇴 仅供学习，请24小时内删除|罗马尼亚
+      - 🇷🇴 仅供学习，请24小时内删除|罗马尼亚 2
+      - 仅供学习，请24小时内删除
+      - 仅供学习，请24小时内删除 2
+      - 仅供学习，请24小时内删除|Relay_🇨🇦CA-🇨🇦CA_42
+      - 仅供学习，请24小时内删除|Relay_🇨🇦CA-🇨🇦CA_43
+      - 🇯🇵 仅供学习，请24小时内删除|Relay_🇰🇷KR-🇯🇵JP_99
+      - 🇨🇳 仅供学习，请24小时内删除|🇨🇳 CN_88
       - 仅供学习，请24小时内删除|Best!*Shanghai-Tokyo*21
       - 仅供学习，请24小时内删除|Best!*Shanghai-Seoul*21
       - 仅供学习，请24小时内删除|Best!*Shanghai-LAX*21
       - 仅供学习，请24小时内删除|Best!*Shanghai-Taipei*21
-      - 🇭🇰 仅供学习，请24小时内删除|TRANSIT*BGP-Hong-Kong*31
       - 🇺🇸 仅供学习，请24小时内删除|美国NN-10
-      - 🇨🇳 仅供学习，请24小时内删除|🇨🇳 CN_88
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_246
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_247
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_248
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_249
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵 JP_250
-      - 🇺🇸 仅供学习，请24小时内删除|美国
-      - 🇷🇴 仅供学习，请24小时内删除|罗马尼亚
-      - 🇮🇹 仅供学习，请24小时内删除|意大利
-      - 🇺🇸 仅供学习，请24小时内删除|北美地区
-      - 仅供学习，请24小时内删除|弗吉尼亚州
       - 仅供学习，请24小时内删除|罗马
-      - 🇬🇧 仅供学习，请24小时内删除|英国
-      - 🇦🇺 仅供学习，请24小时内删除|Relay_🇦🇺AU-🇺🇸US_285
-      - 🇭🇰 仅供学习，请24小时内删除|Relay_🇨🇳CN-🇭🇰HK_496
-      - 🇭🇰 仅供学习，请24小时内删除|Relay_🇭🇰HK-🇷🇺RU_1278
-      - 🇯🇵 仅供学习，请24小时内删除|🇯🇵JP_1537
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1541
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
