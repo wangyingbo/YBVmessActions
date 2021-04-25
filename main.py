@@ -68,9 +68,10 @@ def getSubscribeUrl():
     print(clashList)
     with open('./v2ray.txt', 'w') as f:
         f.write(v2rayTxt.text)
-    
+    day = time.strftime('%Y.%m.%d',time.localtime(time.time()))
     with open('./clash.yml', 'w') as f:
-        f.write(clashTxt.text.replace('https://www.mattkaydiary.com','仅供学习，请24小时内删除'))
+        f.write(clashTxt.text.replace('https://www.mattkaydiary.com',day))
+#         f.write(clashTxt.text.replace('https://www.mattkaydiary.com','仅供学习，请24小时内删除'))
 
 
 # 主函数入口
