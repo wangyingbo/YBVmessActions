@@ -5,207 +5,151 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 🇭🇰 2021.05.01|Best!Transit*Shanghai-HK*CN2-GIA02, server: shcn2-02.iplc188.com, port: 10001, type: vmess, uuid: edac1621-785c-4683-b859-882307be31b2, alterId: 1, cipher: auto, tls: false}
   - {name: 🇺🇸 2021.05.01|Best!Transit*Shanghai-USA*CN2-GIA02, server: shcn2-02.iplc188.com, port: 10002, type: vmess, uuid: edac1621-785c-4683-b859-882307be31b2, alterId: 1, cipher: auto, tls: false}
   - {name: 🇨🇳 2021.05.01|Best!Transit*Shanghai-Europe*CN2-GIA02, server: shcn2-02.iplc188.com, port: 10004, type: vmess, uuid: edac1621-785c-4683-b859-882307be31b2, alterId: 1, cipher: auto, tls: false}
   - {name: 🇭🇰 2021.05.01|Best!Transit*Shanghai-HKT*02, server: shcn2-02.iplc188.com, port: 10005, type: vmess, uuid: edac1621-785c-4683-b859-882307be31b2, alterId: 1, cipher: auto, tls: false}
-  - {name: 🇭🇰 2021.05.01|Low Latency!Transit*Guangzhou-HK01, server: gzcm01.iplc188.com, port: 10001, type: vmess, uuid: edac1621-785c-4683-b859-882307be31b2, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: gzcm01.iplc188.com}}
-  - {name: 🇸🇬 2021.05.01|Transit*Guangzhou-Singapore01, server: gzcm01.iplc188.com, port: 10002, type: vmess, uuid: edac1621-785c-4683-b859-882307be31b2, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: gzcm01.iplc188.com}}
-  - {name: 2021.05.01|Transit*Guangzhou-Tokyo01, server: gzcm01.iplc188.com, port: 10005, type: vmess, uuid: edac1621-785c-4683-b859-882307be31b2, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: gzcm01.iplc188.com}}
-  - {name: 2021.05.01|Transit*Guangzhou-Taipei01, server: gzcm01.iplc188.com, port: 10003, type: vmess, uuid: edac1621-785c-4683-b859-882307be31b2, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: gzcm01.iplc188.com}}
-  - {name: 2021.05.01|Transit*Guangzhou-LAX01, server: gzcm01.iplc188.com, port: 10004, type: vmess, uuid: edac1621-785c-4683-b859-882307be31b2, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: gzcm01.iplc188.com}}
-  - {name: 🇭🇰 2021.05.01|Best!*Shanghai-Hong Kong*21, server: tran-shcu01.iplc188.com, port: 10005, type: vmess, uuid: edac1621-785c-4683-b859-882307be31b2, alterId: 1, cipher: auto, tls: false}
-  - {name: 2021.05.01|Best!*Shanghai-Tokyo*21, server: tran-shcu01.iplc188.com, port: 10001, type: vmess, uuid: edac1621-785c-4683-b859-882307be31b2, alterId: 1, cipher: auto, tls: false}
-  - {name: 2021.05.01|Best!*Shanghai-Seoul*21, server: tran-shcu01.iplc188.com, port: 10002, type: vmess, uuid: edac1621-785c-4683-b859-882307be31b2, alterId: 1, cipher: auto, tls: false}
-  - {name: 2021.05.01|Best!*Shanghai-Taipei*21, server: tran-shcu01.iplc188.com, port: 10004, type: vmess, uuid: edac1621-785c-4683-b859-882307be31b2, alterId: 1, cipher: auto, tls: false}
-  - {name: 🇹🇷 2021.05.01|TRANSIT*BGP-Tokyo*31, server: xz-bgp01.iplc188.com, port: 10012, type: vmess, uuid: edac1621-785c-4683-b859-882307be31b2, alterId: 1, cipher: auto, tls: false}
-  - {name: 🇹🇷 2021.05.01|TRANSIT*BGP-Seoul*31, server: xz-bgp01.iplc188.com, port: 10013, type: vmess, uuid: edac1621-785c-4683-b859-882307be31b2, alterId: 1, cipher: auto, tls: false}
-  - {name: 🇸🇬 2021.05.01|TRANSIT*BGP-Singapore*31, server: xz-bgp01.iplc188.com, port: 10014, type: vmess, uuid: edac1621-785c-4683-b859-882307be31b2, alterId: 1, cipher: auto, tls: false}
-  - {name: 🇭🇰 2021.05.01|🇭🇰 HK_211, server: 42.2.143.119, port: 443, type: vmess, uuid: b707c9e6-3a61-4f0b-8844-9a398cfadfb7, alterId: 2, cipher: auto, tls: true, network: ws, ws-path: /add76314/, ws-headers: {Host: centos.fuchau.xyz}}
-  - {name: 🇺🇸 2021.05.01|🇺🇸 US_435, server: 104.21.48.161, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
-  - {name: 🇺🇸 2021.05.01|🇺🇸 US_436, server: 172.67.154.85, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
-  - {name: 🇺🇸 2021.05.01|🇺🇸 US_1240, server: 104.18.6.138, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
-  - {name: 🇸🇬 2021.05.01|🇸🇬SG_2110, server: 162.62.80.233, port: 80, type: vmess, uuid: 64426f07-e89e-4eca-9f93-d02ef27dd804, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 162.62.80.233}}
-  - {name: 2021.05.01|Relay_ |23.31Mb, server: cdnde.irteyz.today, port: 443, type: vmess, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: cdnde.irteyz.today}}
-  - {name: 2021.05.01| |22.46Mb, server: 162.62.80.233, port: 80, type: vmess, uuid: 64426f07-e89e-4eca-9f93-d02ef27dd804, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 162.62.80.233}}
-  - {name: 🇺🇸 2021.05.01|🇺🇸US | 1.57Mb, server: 128.14.153.42, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8633, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: usa2-node.3366test.com}}
-  - {name: 🇺🇸 2021.05.01|Relay_🇺🇸US-🇮🇳IN_2921 | 2.44Mb, server: a1f1d57ddb958c3db.awsglobalaccelerator.com, port: 10111, type: vmess, uuid: d2f7ce36-40fe-4532-9689-f585a8174e5f, alterId: 64, cipher: auto, tls: false}
-  - {name: 2021.05.01|adi|0428 -, server: 185.124.240.151, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 2021.05.01|adi|0428 - 173.237.207.36:39772, server: 173.237.207.36, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇬🇧 2021.05.01|adi|0428 - 英国adi|0428 -, server: 81.19.214.36, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇨🇭 2021.05.01|adi|0428 - 瑞士, server: 185.124.240.157, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 🇨🇭 2021.05.01|adi|0428 - 瑞士 2, server: 193.29.106.3, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 2021.05.01|adi|0428 - 2, server: 185.124.240.149, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇬🇧 2021.05.01|adi|0428 - 英国, server: 195.140.215.100, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 2021.05.01|adi|0428 - 3, server: 185.141.206.206, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 2021.05.01|adi|0428 - 罗马adi|0428 -, server: 89.238.130.251, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇺🇸 2021.05.01|adi|0428 - 美国adi|0428 -, server: 199.36.221.101, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 2021.05.01|adi|0428 - 4, server: 89.238.130.227, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇺🇸 2021.05.01|adi|0428 - 美国, server: 66.115.147.89, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇬🇧 2021.05.01|adi|0425 - 英国, server: 195.181.171.241, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 2021.05.01|adi|0428 - 5, server: 172.93.146.212, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇺🇸 2021.05.01|adi|0428 - 美国 2, server: 45.89.173.203, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇩🇪 2021.05.01|adi|0428 - 德国, server: 185.2.100.168, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 2021.05.01|adi|0428 - 199.36.221.119:37588, server: 199.36.221.119, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 2021.05.01|adi|0428 - 6, server: 66.115.147.77, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 🇬🇧 2021.05.01|adi|0428 - 英国 2, server: 81.19.214.37, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 2021.05.01|adi|0428 - 7, server: 155.254.29.165, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇬🇧 2021.05.01|adi|0428 - 英国 3, server: 5.226.139.216, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 🇬🇧 2021.05.01|adi|0428 - 英国 4, server: 185.141.206.206, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇭🇰 2021.05.01|Low Latency!Transit*Guangzhou-HK01, server: 183.236.57.18, port: 10001, type: vmess, uuid: edac1621-785c-4683-b859-882307be31b2, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: microsoft.com}}
+  - {name: 2021.05.01|Transit*Guangzhou-Tokyo01, server: 183.236.57.18, port: 10005, type: vmess, uuid: edac1621-785c-4683-b859-882307be31b2, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: microsoft.com}}
+  - {name: 2021.05.01|Transit*Guangzhou-Taipei01, server: 183.236.57.18, port: 10003, type: vmess, uuid: edac1621-785c-4683-b859-882307be31b2, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: microsoft.com}}
+  - {name: 🇭🇰 2021.05.01|Best!*Shanghai-Hong Kong*21, server: 223.166.165.243, port: 10005, type: vmess, uuid: edac1621-785c-4683-b859-882307be31b2, alterId: 1, cipher: auto, tls: false}
+  - {name: 2021.05.01|Best!*Shanghai-Tokyo*21, server: 223.166.165.243, port: 10001, type: vmess, uuid: edac1621-785c-4683-b859-882307be31b2, alterId: 1, cipher: auto, tls: false}
+  - {name: 2021.05.01|Best!*Shanghai-Seoul*21, server: 223.166.165.243, port: 10002, type: vmess, uuid: edac1621-785c-4683-b859-882307be31b2, alterId: 1, cipher: auto, tls: false}
+  - {name: 2021.05.01|Best!*Shanghai-LAX*21, server: 223.166.165.243, port: 10003, type: vmess, uuid: edac1621-785c-4683-b859-882307be31b2, alterId: 1, cipher: auto, tls: false}
+  - {name: 🇭🇰 2021.05.01|Relay_🇭🇰HK-🇭🇰HK_1299, server: vtwonet-hk-a.qjnodeip.xyz, port: 23333, type: vmess, uuid: FD62FBFE-DD70-4772-B712-BB74F4C3264A, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 2021.05.01|Relay_🇭🇰HK-🇭🇰HK_1304, server: hk178.mars6666.com, port: 443, type: vmess, uuid: fe93a062-d13f-3958-9ebc-0c06cd32dfb0, alterId: 3, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: hk178.mars6666.com}}
+  - {name: 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2134, server: s169.snodes.xyz, port: 80, type: vmess, uuid: e88dce51-aba2-3671-bf2b-6e4ca32df64b, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /panel, ws-headers: {Host: s169.snodes.xyz}}
+  - {name: 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2136, server: s178.snodes.xyz, port: 443, type: vmess, uuid: e88dce51-aba2-3671-bf2b-6e4ca32df64b, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /panel, ws-headers: {Host: s178.snodes.xyz}}
+  - {name: 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2138, server: s169.snodes.xyz, port: 443, type: vmess, uuid: e88dce51-aba2-3671-bf2b-6e4ca32df64b, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /panel, ws-headers: {Host: s169.snodes.xyz}}
+  - {name: 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2139, server: 51sg.fans8.xyz, port: 443, type: vmess, uuid: a366e1e2-26e8-31a6-a7d5-23df56a9e9d8, alterId: 3, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: 51sg.fans8.xyz}}
+  - {name: 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2141, server: s173.snodes.xyz, port: 443, type: vmess, uuid: e88dce51-aba2-3671-bf2b-6e4ca32df64b, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /panel, ws-headers: {Host: s173.snodes.xyz}}
+  - {name: 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2142, server: s177.snodes.xyz, port: 443, type: vmess, uuid: e88dce51-aba2-3671-bf2b-6e4ca32df64b, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /panel, ws-headers: {Host: s177.snodes.xyz}}
+  - {name: 🇯🇵 2021.05.01|Relay_🇺🇸US-🇯🇵JP_2943, server: jp10cf.v2cdn.org, port: 443, type: vmess, uuid: FD62FBFE-DD70-4772-B712-BB74F4C3264A, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: jp10cf.v2cdn.org}}
+  - {name: 🇺🇸 2021.05.01|Relay_🇺🇸US-🇺🇸US_2949, server: us178.mars6666.com, port: 443, type: vmess, uuid: fe93a062-d13f-3958-9ebc-0c06cd32dfb0, alterId: 3, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: us178.mars6666.com}}
+  - {name: 🇺🇸 2021.05.01|Relay_🇺🇸US-🇺🇸US_2950, server: vtwonet-us-a.qjnodeip.xyz, port: 8309, type: vmess, uuid: FD62FBFE-DD70-4772-B712-BB74F4C3264A, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 2021.05.01|🇺🇸US_2958, server: 64.64.250.225, port: 3443, type: vmess, uuid: a6800dd6-94a1-4761-8832-34eda6ffeddc, alterId: 6, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: 64.64.250.225}}
+  - {name: 🇯🇵 2021.05.01|Relay_🇺🇸US-🇯🇵JP_2971, server: jp02cf.v2cdn.org, port: 443, type: vmess, uuid: FD62FBFE-DD70-4772-B712-BB74F4C3264A, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: jp02cf.v2cdn.org}}
+  - {name: 🇺🇸 2021.05.01|🇺🇲 美国 -- C, server: zhongzhuangazhk111.xiaobaiyun.me, port: 810, type: vmess, uuid: 28aae7ef-076e-3e57-818f-29ff89e38d3e, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: mgalsj.xiaobaiyun.me}}
+  - {name: 2021.05.01|Relay_ |33.18Mb, server: gzyd-zz.tsutsu.top, port: 48376, type: vmess, uuid: 52e423e2-1adc-4046-8807-af2ef38ab688, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: gzyd-zz.tsutsu.top}}
+  - {name: 2021.05.01|Relay_ |15.12Mb, server: zhongzhuangazhk111.xiaobaiyun.me, port: 810, type: vmess, uuid: 28aae7ef-076e-3e57-818f-29ff89e38d3e, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /hls, ws-headers: {Host: mgalsj.xiaobaiyun.me}}
+  - {name: 2021.05.01|Relay_ |26.59Mb, server: kr03.ronghuafugui.xyz, port: 443, type: vmess, uuid: a366e1e2-26e8-31a6-a7d5-23df56a9e9d8, alterId: 3, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: kr03.ronghuafugui.xyz}}
+  - {name: 🇺🇸 2021.05.01|🇺🇸US_2994 | 4.63Mb, server: 128.14.153.42, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8633, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: usa2-node.3366test.com}}
+  - {name: 2021.05.01|Relay_ |27.18Mb, server: a0afbace65f7f8a92.awsglobalaccelerator.com, port: 11150, type: vmess, uuid: 0a085f37-3b89-42bc-f490-b06d0918e248, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /video, ws-headers: {Host: a0afbace65f7f8a92.awsglobalaccelerator.com}}
+  - {name: 2021.05.01|Relay_ | 6.72Mb, server: 104.21.36.103, port: 443, type: vmess, uuid: dd1479f2-6992-4df2-80e4-426f90b90412, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: woaini.mrx520.ml}}
+  - {name: 2021.05.01|Relay_ |54.42Mb, server: a9848ff772a4788b4.awsglobalaccelerator.com, port: 10124, type: vmess, uuid: 2837c33f-64a5-4390-9798-ce47229f86fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: a9848ff772a4788b4.awsglobalaccelerator.com}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇭🇰 2021.05.01|Best!Transit*Shanghai-HK*CN2-GIA02
       - 🇺🇸 2021.05.01|Best!Transit*Shanghai-USA*CN2-GIA02
       - 🇨🇳 2021.05.01|Best!Transit*Shanghai-Europe*CN2-GIA02
       - 🇭🇰 2021.05.01|Best!Transit*Shanghai-HKT*02
       - 🇭🇰 2021.05.01|Low Latency!Transit*Guangzhou-HK01
-      - 🇸🇬 2021.05.01|Transit*Guangzhou-Singapore01
       - 2021.05.01|Transit*Guangzhou-Tokyo01
       - 2021.05.01|Transit*Guangzhou-Taipei01
-      - 2021.05.01|Transit*Guangzhou-LAX01
       - 🇭🇰 2021.05.01|Best!*Shanghai-Hong Kong*21
       - 2021.05.01|Best!*Shanghai-Tokyo*21
       - 2021.05.01|Best!*Shanghai-Seoul*21
-      - 2021.05.01|Best!*Shanghai-Taipei*21
-      - 🇹🇷 2021.05.01|TRANSIT*BGP-Tokyo*31
-      - 🇹🇷 2021.05.01|TRANSIT*BGP-Seoul*31
-      - 🇸🇬 2021.05.01|TRANSIT*BGP-Singapore*31
-      - 🇭🇰 2021.05.01|🇭🇰 HK_211
-      - 🇺🇸 2021.05.01|🇺🇸 US_435
-      - 🇺🇸 2021.05.01|🇺🇸 US_436
-      - 🇺🇸 2021.05.01|🇺🇸 US_1240
-      - 🇸🇬 2021.05.01|🇸🇬SG_2110
-      - 2021.05.01|Relay_ |23.31Mb
-      - 2021.05.01| |22.46Mb
-      - 🇺🇸 2021.05.01|🇺🇸US | 1.57Mb
-      - 🇺🇸 2021.05.01|Relay_🇺🇸US-🇮🇳IN_2921 | 2.44Mb
-      - 2021.05.01|adi|0428 -
-      - 2021.05.01|adi|0428 - 173.237.207.36:39772
-      - 🇬🇧 2021.05.01|adi|0428 - 英国adi|0428 -
-      - 🇨🇭 2021.05.01|adi|0428 - 瑞士
-      - 🇨🇭 2021.05.01|adi|0428 - 瑞士 2
-      - 2021.05.01|adi|0428 - 2
-      - 🇬🇧 2021.05.01|adi|0428 - 英国
-      - 2021.05.01|adi|0428 - 3
-      - 2021.05.01|adi|0428 - 罗马adi|0428 -
-      - 🇺🇸 2021.05.01|adi|0428 - 美国adi|0428 -
-      - 2021.05.01|adi|0428 - 4
-      - 🇺🇸 2021.05.01|adi|0428 - 美国
-      - 🇬🇧 2021.05.01|adi|0425 - 英国
-      - 2021.05.01|adi|0428 - 5
-      - 🇺🇸 2021.05.01|adi|0428 - 美国 2
-      - 🇩🇪 2021.05.01|adi|0428 - 德国
-      - 2021.05.01|adi|0428 - 199.36.221.119:37588
-      - 2021.05.01|adi|0428 - 6
-      - 🇬🇧 2021.05.01|adi|0428 - 英国 2
-      - 2021.05.01|adi|0428 - 7
-      - 🇬🇧 2021.05.01|adi|0428 - 英国 3
-      - 🇬🇧 2021.05.01|adi|0428 - 英国 4
+      - 2021.05.01|Best!*Shanghai-LAX*21
+      - 🇭🇰 2021.05.01|Relay_🇭🇰HK-🇭🇰HK_1299
+      - 🇭🇰 2021.05.01|Relay_🇭🇰HK-🇭🇰HK_1304
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2134
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2136
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2138
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2139
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2141
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2142
+      - 🇯🇵 2021.05.01|Relay_🇺🇸US-🇯🇵JP_2943
+      - 🇺🇸 2021.05.01|Relay_🇺🇸US-🇺🇸US_2949
+      - 🇺🇸 2021.05.01|Relay_🇺🇸US-🇺🇸US_2950
+      - 🇺🇸 2021.05.01|🇺🇸US_2958
+      - 🇯🇵 2021.05.01|Relay_🇺🇸US-🇯🇵JP_2971
+      - 🇺🇸 2021.05.01|🇺🇲 美国 -- C
+      - 2021.05.01|Relay_ |33.18Mb
+      - 2021.05.01|Relay_ |15.12Mb
+      - 2021.05.01|Relay_ |26.59Mb
+      - 🇺🇸 2021.05.01|🇺🇸US_2994 | 4.63Mb
+      - 2021.05.01|Relay_ |27.18Mb
+      - 2021.05.01|Relay_ | 6.72Mb
+      - 2021.05.01|Relay_ |54.42Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 🇭🇰 2021.05.01|Best!Transit*Shanghai-HK*CN2-GIA02
       - 🇺🇸 2021.05.01|Best!Transit*Shanghai-USA*CN2-GIA02
       - 🇨🇳 2021.05.01|Best!Transit*Shanghai-Europe*CN2-GIA02
       - 🇭🇰 2021.05.01|Best!Transit*Shanghai-HKT*02
       - 🇭🇰 2021.05.01|Low Latency!Transit*Guangzhou-HK01
-      - 🇸🇬 2021.05.01|Transit*Guangzhou-Singapore01
       - 2021.05.01|Transit*Guangzhou-Tokyo01
       - 2021.05.01|Transit*Guangzhou-Taipei01
-      - 2021.05.01|Transit*Guangzhou-LAX01
       - 🇭🇰 2021.05.01|Best!*Shanghai-Hong Kong*21
       - 2021.05.01|Best!*Shanghai-Tokyo*21
       - 2021.05.01|Best!*Shanghai-Seoul*21
-      - 2021.05.01|Best!*Shanghai-Taipei*21
-      - 🇹🇷 2021.05.01|TRANSIT*BGP-Tokyo*31
-      - 🇹🇷 2021.05.01|TRANSIT*BGP-Seoul*31
-      - 🇸🇬 2021.05.01|TRANSIT*BGP-Singapore*31
-      - 🇭🇰 2021.05.01|🇭🇰 HK_211
-      - 🇺🇸 2021.05.01|🇺🇸 US_435
-      - 🇺🇸 2021.05.01|🇺🇸 US_436
-      - 🇺🇸 2021.05.01|🇺🇸 US_1240
-      - 🇸🇬 2021.05.01|🇸🇬SG_2110
-      - 2021.05.01|Relay_ |23.31Mb
-      - 2021.05.01| |22.46Mb
-      - 🇺🇸 2021.05.01|🇺🇸US | 1.57Mb
-      - 🇺🇸 2021.05.01|Relay_🇺🇸US-🇮🇳IN_2921 | 2.44Mb
-      - 2021.05.01|adi|0428 -
-      - 2021.05.01|adi|0428 - 173.237.207.36:39772
-      - 🇬🇧 2021.05.01|adi|0428 - 英国adi|0428 -
-      - 🇨🇭 2021.05.01|adi|0428 - 瑞士
-      - 🇨🇭 2021.05.01|adi|0428 - 瑞士 2
-      - 2021.05.01|adi|0428 - 2
-      - 🇬🇧 2021.05.01|adi|0428 - 英国
-      - 2021.05.01|adi|0428 - 3
-      - 2021.05.01|adi|0428 - 罗马adi|0428 -
-      - 🇺🇸 2021.05.01|adi|0428 - 美国adi|0428 -
-      - 2021.05.01|adi|0428 - 4
-      - 🇺🇸 2021.05.01|adi|0428 - 美国
-      - 🇬🇧 2021.05.01|adi|0425 - 英国
-      - 2021.05.01|adi|0428 - 5
-      - 🇺🇸 2021.05.01|adi|0428 - 美国 2
-      - 🇩🇪 2021.05.01|adi|0428 - 德国
-      - 2021.05.01|adi|0428 - 199.36.221.119:37588
-      - 2021.05.01|adi|0428 - 6
-      - 🇬🇧 2021.05.01|adi|0428 - 英国 2
-      - 2021.05.01|adi|0428 - 7
-      - 🇬🇧 2021.05.01|adi|0428 - 英国 3
-      - 🇬🇧 2021.05.01|adi|0428 - 英国 4
+      - 2021.05.01|Best!*Shanghai-LAX*21
+      - 🇭🇰 2021.05.01|Relay_🇭🇰HK-🇭🇰HK_1299
+      - 🇭🇰 2021.05.01|Relay_🇭🇰HK-🇭🇰HK_1304
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2134
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2136
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2138
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2139
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2141
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2142
+      - 🇯🇵 2021.05.01|Relay_🇺🇸US-🇯🇵JP_2943
+      - 🇺🇸 2021.05.01|Relay_🇺🇸US-🇺🇸US_2949
+      - 🇺🇸 2021.05.01|Relay_🇺🇸US-🇺🇸US_2950
+      - 🇺🇸 2021.05.01|🇺🇸US_2958
+      - 🇯🇵 2021.05.01|Relay_🇺🇸US-🇯🇵JP_2971
+      - 🇺🇸 2021.05.01|🇺🇲 美国 -- C
+      - 2021.05.01|Relay_ |33.18Mb
+      - 2021.05.01|Relay_ |15.12Mb
+      - 2021.05.01|Relay_ |26.59Mb
+      - 🇺🇸 2021.05.01|🇺🇸US_2994 | 4.63Mb
+      - 2021.05.01|Relay_ |27.18Mb
+      - 2021.05.01|Relay_ | 6.72Mb
+      - 2021.05.01|Relay_ |54.42Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇭🇰 2021.05.01|Best!Transit*Shanghai-HK*CN2-GIA02
       - 🇺🇸 2021.05.01|Best!Transit*Shanghai-USA*CN2-GIA02
       - 🇨🇳 2021.05.01|Best!Transit*Shanghai-Europe*CN2-GIA02
       - 🇭🇰 2021.05.01|Best!Transit*Shanghai-HKT*02
       - 🇭🇰 2021.05.01|Low Latency!Transit*Guangzhou-HK01
-      - 🇸🇬 2021.05.01|Transit*Guangzhou-Singapore01
       - 2021.05.01|Transit*Guangzhou-Tokyo01
       - 2021.05.01|Transit*Guangzhou-Taipei01
-      - 2021.05.01|Transit*Guangzhou-LAX01
       - 🇭🇰 2021.05.01|Best!*Shanghai-Hong Kong*21
       - 2021.05.01|Best!*Shanghai-Tokyo*21
       - 2021.05.01|Best!*Shanghai-Seoul*21
-      - 2021.05.01|Best!*Shanghai-Taipei*21
-      - 🇹🇷 2021.05.01|TRANSIT*BGP-Tokyo*31
-      - 🇹🇷 2021.05.01|TRANSIT*BGP-Seoul*31
-      - 🇸🇬 2021.05.01|TRANSIT*BGP-Singapore*31
-      - 🇭🇰 2021.05.01|🇭🇰 HK_211
-      - 🇺🇸 2021.05.01|🇺🇸 US_435
-      - 🇺🇸 2021.05.01|🇺🇸 US_436
-      - 🇺🇸 2021.05.01|🇺🇸 US_1240
-      - 🇸🇬 2021.05.01|🇸🇬SG_2110
-      - 2021.05.01|Relay_ |23.31Mb
-      - 2021.05.01| |22.46Mb
-      - 🇺🇸 2021.05.01|🇺🇸US | 1.57Mb
-      - 🇺🇸 2021.05.01|Relay_🇺🇸US-🇮🇳IN_2921 | 2.44Mb
-      - 2021.05.01|adi|0428 -
-      - 2021.05.01|adi|0428 - 173.237.207.36:39772
-      - 🇬🇧 2021.05.01|adi|0428 - 英国adi|0428 -
-      - 🇨🇭 2021.05.01|adi|0428 - 瑞士
-      - 🇨🇭 2021.05.01|adi|0428 - 瑞士 2
-      - 2021.05.01|adi|0428 - 2
-      - 🇬🇧 2021.05.01|adi|0428 - 英国
-      - 2021.05.01|adi|0428 - 3
-      - 2021.05.01|adi|0428 - 罗马adi|0428 -
-      - 🇺🇸 2021.05.01|adi|0428 - 美国adi|0428 -
-      - 2021.05.01|adi|0428 - 4
-      - 🇺🇸 2021.05.01|adi|0428 - 美国
-      - 🇬🇧 2021.05.01|adi|0425 - 英国
-      - 2021.05.01|adi|0428 - 5
-      - 🇺🇸 2021.05.01|adi|0428 - 美国 2
-      - 🇩🇪 2021.05.01|adi|0428 - 德国
-      - 2021.05.01|adi|0428 - 199.36.221.119:37588
-      - 2021.05.01|adi|0428 - 6
-      - 🇬🇧 2021.05.01|adi|0428 - 英国 2
-      - 2021.05.01|adi|0428 - 7
-      - 🇬🇧 2021.05.01|adi|0428 - 英国 3
-      - 🇬🇧 2021.05.01|adi|0428 - 英国 4
+      - 2021.05.01|Best!*Shanghai-LAX*21
+      - 🇭🇰 2021.05.01|Relay_🇭🇰HK-🇭🇰HK_1299
+      - 🇭🇰 2021.05.01|Relay_🇭🇰HK-🇭🇰HK_1304
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2134
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2136
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2138
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2139
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2141
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2142
+      - 🇯🇵 2021.05.01|Relay_🇺🇸US-🇯🇵JP_2943
+      - 🇺🇸 2021.05.01|Relay_🇺🇸US-🇺🇸US_2949
+      - 🇺🇸 2021.05.01|Relay_🇺🇸US-🇺🇸US_2950
+      - 🇺🇸 2021.05.01|🇺🇸US_2958
+      - 🇯🇵 2021.05.01|Relay_🇺🇸US-🇯🇵JP_2971
+      - 🇺🇸 2021.05.01|🇺🇲 美国 -- C
+      - 2021.05.01|Relay_ |33.18Mb
+      - 2021.05.01|Relay_ |15.12Mb
+      - 2021.05.01|Relay_ |26.59Mb
+      - 🇺🇸 2021.05.01|🇺🇸US_2994 | 4.63Mb
+      - 2021.05.01|Relay_ |27.18Mb
+      - 2021.05.01|Relay_ | 6.72Mb
+      - 2021.05.01|Relay_ |54.42Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -217,155 +161,113 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 🇭🇰 2021.05.01|Best!Transit*Shanghai-HK*CN2-GIA02
       - 🇺🇸 2021.05.01|Best!Transit*Shanghai-USA*CN2-GIA02
       - 🇨🇳 2021.05.01|Best!Transit*Shanghai-Europe*CN2-GIA02
       - 🇭🇰 2021.05.01|Best!Transit*Shanghai-HKT*02
       - 🇭🇰 2021.05.01|Low Latency!Transit*Guangzhou-HK01
-      - 🇸🇬 2021.05.01|Transit*Guangzhou-Singapore01
       - 2021.05.01|Transit*Guangzhou-Tokyo01
       - 2021.05.01|Transit*Guangzhou-Taipei01
-      - 2021.05.01|Transit*Guangzhou-LAX01
       - 🇭🇰 2021.05.01|Best!*Shanghai-Hong Kong*21
       - 2021.05.01|Best!*Shanghai-Tokyo*21
       - 2021.05.01|Best!*Shanghai-Seoul*21
-      - 2021.05.01|Best!*Shanghai-Taipei*21
-      - 🇹🇷 2021.05.01|TRANSIT*BGP-Tokyo*31
-      - 🇹🇷 2021.05.01|TRANSIT*BGP-Seoul*31
-      - 🇸🇬 2021.05.01|TRANSIT*BGP-Singapore*31
-      - 🇭🇰 2021.05.01|🇭🇰 HK_211
-      - 🇺🇸 2021.05.01|🇺🇸 US_435
-      - 🇺🇸 2021.05.01|🇺🇸 US_436
-      - 🇺🇸 2021.05.01|🇺🇸 US_1240
-      - 🇸🇬 2021.05.01|🇸🇬SG_2110
-      - 2021.05.01|Relay_ |23.31Mb
-      - 2021.05.01| |22.46Mb
-      - 🇺🇸 2021.05.01|🇺🇸US | 1.57Mb
-      - 🇺🇸 2021.05.01|Relay_🇺🇸US-🇮🇳IN_2921 | 2.44Mb
-      - 2021.05.01|adi|0428 -
-      - 2021.05.01|adi|0428 - 173.237.207.36:39772
-      - 🇬🇧 2021.05.01|adi|0428 - 英国adi|0428 -
-      - 🇨🇭 2021.05.01|adi|0428 - 瑞士
-      - 🇨🇭 2021.05.01|adi|0428 - 瑞士 2
-      - 2021.05.01|adi|0428 - 2
-      - 🇬🇧 2021.05.01|adi|0428 - 英国
-      - 2021.05.01|adi|0428 - 3
-      - 2021.05.01|adi|0428 - 罗马adi|0428 -
-      - 🇺🇸 2021.05.01|adi|0428 - 美国adi|0428 -
-      - 2021.05.01|adi|0428 - 4
-      - 🇺🇸 2021.05.01|adi|0428 - 美国
-      - 🇬🇧 2021.05.01|adi|0425 - 英国
-      - 2021.05.01|adi|0428 - 5
-      - 🇺🇸 2021.05.01|adi|0428 - 美国 2
-      - 🇩🇪 2021.05.01|adi|0428 - 德国
-      - 2021.05.01|adi|0428 - 199.36.221.119:37588
-      - 2021.05.01|adi|0428 - 6
-      - 🇬🇧 2021.05.01|adi|0428 - 英国 2
-      - 2021.05.01|adi|0428 - 7
-      - 🇬🇧 2021.05.01|adi|0428 - 英国 3
-      - 🇬🇧 2021.05.01|adi|0428 - 英国 4
+      - 2021.05.01|Best!*Shanghai-LAX*21
+      - 🇭🇰 2021.05.01|Relay_🇭🇰HK-🇭🇰HK_1299
+      - 🇭🇰 2021.05.01|Relay_🇭🇰HK-🇭🇰HK_1304
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2134
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2136
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2138
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2139
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2141
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2142
+      - 🇯🇵 2021.05.01|Relay_🇺🇸US-🇯🇵JP_2943
+      - 🇺🇸 2021.05.01|Relay_🇺🇸US-🇺🇸US_2949
+      - 🇺🇸 2021.05.01|Relay_🇺🇸US-🇺🇸US_2950
+      - 🇺🇸 2021.05.01|🇺🇸US_2958
+      - 🇯🇵 2021.05.01|Relay_🇺🇸US-🇯🇵JP_2971
+      - 🇺🇸 2021.05.01|🇺🇲 美国 -- C
+      - 2021.05.01|Relay_ |33.18Mb
+      - 2021.05.01|Relay_ |15.12Mb
+      - 2021.05.01|Relay_ |26.59Mb
+      - 🇺🇸 2021.05.01|🇺🇸US_2994 | 4.63Mb
+      - 2021.05.01|Relay_ |27.18Mb
+      - 2021.05.01|Relay_ | 6.72Mb
+      - 2021.05.01|Relay_ |54.42Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 🇭🇰 2021.05.01|Best!Transit*Shanghai-HK*CN2-GIA02
       - 🇺🇸 2021.05.01|Best!Transit*Shanghai-USA*CN2-GIA02
       - 🇨🇳 2021.05.01|Best!Transit*Shanghai-Europe*CN2-GIA02
       - 🇭🇰 2021.05.01|Best!Transit*Shanghai-HKT*02
       - 🇭🇰 2021.05.01|Low Latency!Transit*Guangzhou-HK01
-      - 🇸🇬 2021.05.01|Transit*Guangzhou-Singapore01
       - 2021.05.01|Transit*Guangzhou-Tokyo01
       - 2021.05.01|Transit*Guangzhou-Taipei01
-      - 2021.05.01|Transit*Guangzhou-LAX01
       - 🇭🇰 2021.05.01|Best!*Shanghai-Hong Kong*21
       - 2021.05.01|Best!*Shanghai-Tokyo*21
       - 2021.05.01|Best!*Shanghai-Seoul*21
-      - 2021.05.01|Best!*Shanghai-Taipei*21
-      - 🇹🇷 2021.05.01|TRANSIT*BGP-Tokyo*31
-      - 🇹🇷 2021.05.01|TRANSIT*BGP-Seoul*31
-      - 🇸🇬 2021.05.01|TRANSIT*BGP-Singapore*31
-      - 🇭🇰 2021.05.01|🇭🇰 HK_211
-      - 🇺🇸 2021.05.01|🇺🇸 US_435
-      - 🇺🇸 2021.05.01|🇺🇸 US_436
-      - 🇺🇸 2021.05.01|🇺🇸 US_1240
-      - 🇸🇬 2021.05.01|🇸🇬SG_2110
-      - 2021.05.01|Relay_ |23.31Mb
-      - 2021.05.01| |22.46Mb
-      - 🇺🇸 2021.05.01|🇺🇸US | 1.57Mb
-      - 🇺🇸 2021.05.01|Relay_🇺🇸US-🇮🇳IN_2921 | 2.44Mb
-      - 2021.05.01|adi|0428 -
-      - 2021.05.01|adi|0428 - 173.237.207.36:39772
-      - 🇬🇧 2021.05.01|adi|0428 - 英国adi|0428 -
-      - 🇨🇭 2021.05.01|adi|0428 - 瑞士
-      - 🇨🇭 2021.05.01|adi|0428 - 瑞士 2
-      - 2021.05.01|adi|0428 - 2
-      - 🇬🇧 2021.05.01|adi|0428 - 英国
-      - 2021.05.01|adi|0428 - 3
-      - 2021.05.01|adi|0428 - 罗马adi|0428 -
-      - 🇺🇸 2021.05.01|adi|0428 - 美国adi|0428 -
-      - 2021.05.01|adi|0428 - 4
-      - 🇺🇸 2021.05.01|adi|0428 - 美国
-      - 🇬🇧 2021.05.01|adi|0425 - 英国
-      - 2021.05.01|adi|0428 - 5
-      - 🇺🇸 2021.05.01|adi|0428 - 美国 2
-      - 🇩🇪 2021.05.01|adi|0428 - 德国
-      - 2021.05.01|adi|0428 - 199.36.221.119:37588
-      - 2021.05.01|adi|0428 - 6
-      - 🇬🇧 2021.05.01|adi|0428 - 英国 2
-      - 2021.05.01|adi|0428 - 7
-      - 🇬🇧 2021.05.01|adi|0428 - 英国 3
-      - 🇬🇧 2021.05.01|adi|0428 - 英国 4
+      - 2021.05.01|Best!*Shanghai-LAX*21
+      - 🇭🇰 2021.05.01|Relay_🇭🇰HK-🇭🇰HK_1299
+      - 🇭🇰 2021.05.01|Relay_🇭🇰HK-🇭🇰HK_1304
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2134
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2136
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2138
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2139
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2141
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2142
+      - 🇯🇵 2021.05.01|Relay_🇺🇸US-🇯🇵JP_2943
+      - 🇺🇸 2021.05.01|Relay_🇺🇸US-🇺🇸US_2949
+      - 🇺🇸 2021.05.01|Relay_🇺🇸US-🇺🇸US_2950
+      - 🇺🇸 2021.05.01|🇺🇸US_2958
+      - 🇯🇵 2021.05.01|Relay_🇺🇸US-🇯🇵JP_2971
+      - 🇺🇸 2021.05.01|🇺🇲 美国 -- C
+      - 2021.05.01|Relay_ |33.18Mb
+      - 2021.05.01|Relay_ |15.12Mb
+      - 2021.05.01|Relay_ |26.59Mb
+      - 🇺🇸 2021.05.01|🇺🇸US_2994 | 4.63Mb
+      - 2021.05.01|Relay_ |27.18Mb
+      - 2021.05.01|Relay_ | 6.72Mb
+      - 2021.05.01|Relay_ |54.42Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇭🇰 2021.05.01|Best!Transit*Shanghai-HK*CN2-GIA02
       - 🇺🇸 2021.05.01|Best!Transit*Shanghai-USA*CN2-GIA02
       - 🇨🇳 2021.05.01|Best!Transit*Shanghai-Europe*CN2-GIA02
       - 🇭🇰 2021.05.01|Best!Transit*Shanghai-HKT*02
       - 🇭🇰 2021.05.01|Low Latency!Transit*Guangzhou-HK01
-      - 🇸🇬 2021.05.01|Transit*Guangzhou-Singapore01
       - 2021.05.01|Transit*Guangzhou-Tokyo01
       - 2021.05.01|Transit*Guangzhou-Taipei01
-      - 2021.05.01|Transit*Guangzhou-LAX01
       - 🇭🇰 2021.05.01|Best!*Shanghai-Hong Kong*21
       - 2021.05.01|Best!*Shanghai-Tokyo*21
       - 2021.05.01|Best!*Shanghai-Seoul*21
-      - 2021.05.01|Best!*Shanghai-Taipei*21
-      - 🇹🇷 2021.05.01|TRANSIT*BGP-Tokyo*31
-      - 🇹🇷 2021.05.01|TRANSIT*BGP-Seoul*31
-      - 🇸🇬 2021.05.01|TRANSIT*BGP-Singapore*31
-      - 🇭🇰 2021.05.01|🇭🇰 HK_211
-      - 🇺🇸 2021.05.01|🇺🇸 US_435
-      - 🇺🇸 2021.05.01|🇺🇸 US_436
-      - 🇺🇸 2021.05.01|🇺🇸 US_1240
-      - 🇸🇬 2021.05.01|🇸🇬SG_2110
-      - 2021.05.01|Relay_ |23.31Mb
-      - 2021.05.01| |22.46Mb
-      - 🇺🇸 2021.05.01|🇺🇸US | 1.57Mb
-      - 🇺🇸 2021.05.01|Relay_🇺🇸US-🇮🇳IN_2921 | 2.44Mb
-      - 2021.05.01|adi|0428 -
-      - 2021.05.01|adi|0428 - 173.237.207.36:39772
-      - 🇬🇧 2021.05.01|adi|0428 - 英国adi|0428 -
-      - 🇨🇭 2021.05.01|adi|0428 - 瑞士
-      - 🇨🇭 2021.05.01|adi|0428 - 瑞士 2
-      - 2021.05.01|adi|0428 - 2
-      - 🇬🇧 2021.05.01|adi|0428 - 英国
-      - 2021.05.01|adi|0428 - 3
-      - 2021.05.01|adi|0428 - 罗马adi|0428 -
-      - 🇺🇸 2021.05.01|adi|0428 - 美国adi|0428 -
-      - 2021.05.01|adi|0428 - 4
-      - 🇺🇸 2021.05.01|adi|0428 - 美国
-      - 🇬🇧 2021.05.01|adi|0425 - 英国
-      - 2021.05.01|adi|0428 - 5
-      - 🇺🇸 2021.05.01|adi|0428 - 美国 2
-      - 🇩🇪 2021.05.01|adi|0428 - 德国
-      - 2021.05.01|adi|0428 - 199.36.221.119:37588
-      - 2021.05.01|adi|0428 - 6
-      - 🇬🇧 2021.05.01|adi|0428 - 英国 2
-      - 2021.05.01|adi|0428 - 7
-      - 🇬🇧 2021.05.01|adi|0428 - 英国 3
-      - 🇬🇧 2021.05.01|adi|0428 - 英国 4
+      - 2021.05.01|Best!*Shanghai-LAX*21
+      - 🇭🇰 2021.05.01|Relay_🇭🇰HK-🇭🇰HK_1299
+      - 🇭🇰 2021.05.01|Relay_🇭🇰HK-🇭🇰HK_1304
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2134
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2136
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2138
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2139
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2141
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2142
+      - 🇯🇵 2021.05.01|Relay_🇺🇸US-🇯🇵JP_2943
+      - 🇺🇸 2021.05.01|Relay_🇺🇸US-🇺🇸US_2949
+      - 🇺🇸 2021.05.01|Relay_🇺🇸US-🇺🇸US_2950
+      - 🇺🇸 2021.05.01|🇺🇸US_2958
+      - 🇯🇵 2021.05.01|Relay_🇺🇸US-🇯🇵JP_2971
+      - 🇺🇸 2021.05.01|🇺🇲 美国 -- C
+      - 2021.05.01|Relay_ |33.18Mb
+      - 2021.05.01|Relay_ |15.12Mb
+      - 2021.05.01|Relay_ |26.59Mb
+      - 🇺🇸 2021.05.01|🇺🇸US_2994 | 4.63Mb
+      - 2021.05.01|Relay_ |27.18Mb
+      - 2021.05.01|Relay_ | 6.72Mb
+      - 2021.05.01|Relay_ |54.42Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -381,52 +283,38 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇭🇰 2021.05.01|Best!Transit*Shanghai-HK*CN2-GIA02
       - 🇺🇸 2021.05.01|Best!Transit*Shanghai-USA*CN2-GIA02
       - 🇨🇳 2021.05.01|Best!Transit*Shanghai-Europe*CN2-GIA02
       - 🇭🇰 2021.05.01|Best!Transit*Shanghai-HKT*02
       - 🇭🇰 2021.05.01|Low Latency!Transit*Guangzhou-HK01
-      - 🇸🇬 2021.05.01|Transit*Guangzhou-Singapore01
       - 2021.05.01|Transit*Guangzhou-Tokyo01
       - 2021.05.01|Transit*Guangzhou-Taipei01
-      - 2021.05.01|Transit*Guangzhou-LAX01
       - 🇭🇰 2021.05.01|Best!*Shanghai-Hong Kong*21
       - 2021.05.01|Best!*Shanghai-Tokyo*21
       - 2021.05.01|Best!*Shanghai-Seoul*21
-      - 2021.05.01|Best!*Shanghai-Taipei*21
-      - 🇹🇷 2021.05.01|TRANSIT*BGP-Tokyo*31
-      - 🇹🇷 2021.05.01|TRANSIT*BGP-Seoul*31
-      - 🇸🇬 2021.05.01|TRANSIT*BGP-Singapore*31
-      - 🇭🇰 2021.05.01|🇭🇰 HK_211
-      - 🇺🇸 2021.05.01|🇺🇸 US_435
-      - 🇺🇸 2021.05.01|🇺🇸 US_436
-      - 🇺🇸 2021.05.01|🇺🇸 US_1240
-      - 🇸🇬 2021.05.01|🇸🇬SG_2110
-      - 2021.05.01|Relay_ |23.31Mb
-      - 2021.05.01| |22.46Mb
-      - 🇺🇸 2021.05.01|🇺🇸US | 1.57Mb
-      - 🇺🇸 2021.05.01|Relay_🇺🇸US-🇮🇳IN_2921 | 2.44Mb
-      - 2021.05.01|adi|0428 -
-      - 2021.05.01|adi|0428 - 173.237.207.36:39772
-      - 🇬🇧 2021.05.01|adi|0428 - 英国adi|0428 -
-      - 🇨🇭 2021.05.01|adi|0428 - 瑞士
-      - 🇨🇭 2021.05.01|adi|0428 - 瑞士 2
-      - 2021.05.01|adi|0428 - 2
-      - 🇬🇧 2021.05.01|adi|0428 - 英国
-      - 2021.05.01|adi|0428 - 3
-      - 2021.05.01|adi|0428 - 罗马adi|0428 -
-      - 🇺🇸 2021.05.01|adi|0428 - 美国adi|0428 -
-      - 2021.05.01|adi|0428 - 4
-      - 🇺🇸 2021.05.01|adi|0428 - 美国
-      - 🇬🇧 2021.05.01|adi|0425 - 英国
-      - 2021.05.01|adi|0428 - 5
-      - 🇺🇸 2021.05.01|adi|0428 - 美国 2
-      - 🇩🇪 2021.05.01|adi|0428 - 德国
-      - 2021.05.01|adi|0428 - 199.36.221.119:37588
-      - 2021.05.01|adi|0428 - 6
-      - 🇬🇧 2021.05.01|adi|0428 - 英国 2
-      - 2021.05.01|adi|0428 - 7
-      - 🇬🇧 2021.05.01|adi|0428 - 英国 3
-      - 🇬🇧 2021.05.01|adi|0428 - 英国 4
+      - 2021.05.01|Best!*Shanghai-LAX*21
+      - 🇭🇰 2021.05.01|Relay_🇭🇰HK-🇭🇰HK_1299
+      - 🇭🇰 2021.05.01|Relay_🇭🇰HK-🇭🇰HK_1304
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2134
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2136
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2138
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2139
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2141
+      - 🇸🇬 2021.05.01|Relay_🇸🇬SG-🇸🇬SG_2142
+      - 🇯🇵 2021.05.01|Relay_🇺🇸US-🇯🇵JP_2943
+      - 🇺🇸 2021.05.01|Relay_🇺🇸US-🇺🇸US_2949
+      - 🇺🇸 2021.05.01|Relay_🇺🇸US-🇺🇸US_2950
+      - 🇺🇸 2021.05.01|🇺🇸US_2958
+      - 🇯🇵 2021.05.01|Relay_🇺🇸US-🇯🇵JP_2971
+      - 🇺🇸 2021.05.01|🇺🇲 美国 -- C
+      - 2021.05.01|Relay_ |33.18Mb
+      - 2021.05.01|Relay_ |15.12Mb
+      - 2021.05.01|Relay_ |26.59Mb
+      - 🇺🇸 2021.05.01|🇺🇸US_2994 | 4.63Mb
+      - 2021.05.01|Relay_ |27.18Mb
+      - 2021.05.01|Relay_ | 6.72Mb
+      - 2021.05.01|Relay_ |54.42Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
