@@ -23,7 +23,7 @@ def main(event, context):
     # 初始化日志文件
     utils.initLog('log.txt')
     utils.clearLog()
-    config = utils.readJsonFile('config.json')
+    # config = utils.readJsonFile('config.json')
     # artUrl = getArticle()
     # getSubscribeUrl(artUrl)
     getSubscribeUrl()
