@@ -41,7 +41,20 @@ jobs:
       run: |
         python main.py
       #   echo "$CONFIG" > ./config.json
-        
+         # 使用云开发 Github Action 部署
+         
+    - name: Deploy static to Tencent CloudBase
+      id: deployStatic
+      uses: TencentCloudBase/cloudbase-action@v1
+      with:
+        # 云开发的访问密钥 secretId 和 secretKey
+        secretId: ${{ secrets.SECRET_ID }}
+        secretKey: ${{ secrets.SECRET_KEY }}
+        # 云开发的环境id
+        envId: ${{ secrets.ENV_ID }}
+        # Github 项目静态文件的路径
+        staticSrcPath: subscribe
+          
     - name: 提交更改
       run: |                 
          git config --local user.email "skywolf627@qq.com"
