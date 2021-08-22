@@ -1,4 +1,7 @@
 # VmessActions
+
+本项目fork自[https://github.com/skywolf627/VmessActions](https://github.com/skywolf627/VmessActions)
+
 通过GitHub的actions 自动采集节点 
 自动生成订阅信息
 
