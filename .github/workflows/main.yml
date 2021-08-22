@@ -57,8 +57,8 @@ jobs:
           
     - name: 提交更改
       run: |                 
-         git config --local user.email "skywolf627@qq.com"
-         git config --local user.name "skywolf627"
+         git config --local user.email "wangyingbo528@126.com"
+         git config --local user.name "wangyingbo"
          git add subscribe/v2ray.txt
          git add subscribe/clash.yml
          git commit -m "更新订阅链接"
